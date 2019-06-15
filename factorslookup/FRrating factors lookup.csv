@@ -1,0 +1,670 @@
+S.No.,Coverage_Name,Dwelling,Rating_Factors_Algorithm,Rating_Factors_PC_worksheet,Rating_Factors_Expected
+1,Coverage A,Liability,Base Rate,table:BaseRate.Liability,BaseRate
+2,Coverage A,Liability,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+3,Coverage A,Liability,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+4,Coverage A,Liability,Distance to Coast,table:Distance To Coast.Liability,
+5,Coverage A,Liability,Acreage,table:Acreage.Liability,Acres
+6,Coverage A,Liability,Farm Type,table:Farm_Type.Liability,FarmType
+7,Coverage A,Liability,Credit,table:Credit.Liability,Credit
+8,Coverage A,Liability,Protection Class,table:Protection Class.Liability,PC
+9,Coverage A,Liability,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+10,Coverage A,Liability,Construction Type,table:Construction Materials for All.Liability,Constr
+11,Coverage A,Liability,Number of Families,table:Number Of Families.Liability,NumFam
+12,Coverage A,Liability,TownRowhouse,table:TownRowHouse.Liability,TownRow
+13,Coverage A,Liability,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+14,Coverage A,Liability,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+15,Coverage A,Liability,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+16,Coverage A,Liability,Garage Factor,table:Garage Factor.Liability,Garages
+17,Coverage A,Liability,Dwelling Claims Factor,,DwellClaims
+18,Coverage A,Liability,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+19,Coverage A,Liability,New Business Loss Experience Factor,,
+20,Coverage A,Liability,Pool Liability,table:Pool.Liability,Pool
+21,Coverage A,Liability,Trampoline Liability,table:Trampoline.Liability,Trampoline
+22,Coverage A,Liability,Perils Factor,table:Perils.Liability,Perils
+23,Coverage A,Liability,Age of Dwelling,,AOD
+24,Coverage A,Liability,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+25,Coverage A,Liability,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+26,Coverage A,Liability,Roof Shape,table:RoofShape.Liability,RoofShape
+27,Coverage A,Liability,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+28,Coverage A,Liability,Utility Update ,table:Utility.Liability,UtilElec
+29,Coverage A,Liability,Utility Update ,table:Utility.Liability,UtilHeat
+30,Coverage A,Liability,Utility Update ,table:Utility.Liability,UtilPlumb
+31,Coverage A,Liability,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+32,Coverage A,Liability,Fortified,table:Fortified.Liability,Fortified
+33,Coverage A,Liability,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+34,Coverage A,Liability,Wind Mitigation,table:Wind Mitigation.Liability,
+35,Coverage A,Liability,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+36,Coverage A,Liability,Coverage Modification,,
+37,Coverage A,Liability,Brushfire,table:Brushfire.Liability,
+38,Coverage A,Liability,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+39,Coverage A,Liability,Foundation Type,table:FoundationType.Liability,Foundation
+40,Coverage A,Liability,ACV Roof,table:ACVRoof.Liability,ACVRoof
+41,Coverage A,Liability,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+42,Coverage A,Liability,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+43,Coverage A,Liability,Occupancy,table:Occupancy.Liability,Occupancy
+44,Coverage A,Liability,Employee Discount,table:EmployeeDiscount,EmployDisc
+45,Coverage A,Liability,IRPM Factor,IFactor,
+46,Coverage A,Liability,Transfer Plan Factor,,
+47,Coverage A,Hail,Base Rate,table:BaseRate.Liability,BaseRate
+48,Coverage A,Hail,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+49,Coverage A,Hail,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+50,Coverage A,Hail,Distance to Coast,table:Distance To Coast.Liability,
+51,Coverage A,Hail,Acreage,table:Acreage.Liability,Acres
+52,Coverage A,Hail,Farm Type,table:Farm_Type.Liability,FarmType
+53,Coverage A,Hail,Credit,table:Credit.Liability,Credit
+54,Coverage A,Hail,Protection Class,table:Protection Class.Liability,PC
+55,Coverage A,Hail,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+56,Coverage A,Hail,Construction Type,table:Construction Materials for All.Liability,Constr
+57,Coverage A,Hail,Number of Families,table:Number Of Families.Liability,NumFam
+58,Coverage A,Hail,TownRowhouse,table:TownRowHouse.Liability,TownRow
+59,Coverage A,Hail,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+60,Coverage A,Hail,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+61,Coverage A,Hail,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+62,Coverage A,Hail,Garage Factor,table:Garage Factor.Liability,Garages
+63,Coverage A,Hail,Dwelling Claims Factor,,DwellClaims
+64,Coverage A,Hail,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+65,Coverage A,Hail,New Business Loss Experience Factor,,
+66,Coverage A,Hail,Pool Liability,table:Pool.Liability,Pool
+67,Coverage A,Hail,Trampoline Liability,table:Trampoline.Liability,Trampoline
+68,Coverage A,Hail,Perils Factor,table:Perils.Liability,Perils
+69,Coverage A,Hail,Age of Dwelling,,AOD
+70,Coverage A,Hail,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+71,Coverage A,Hail,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+72,Coverage A,Hail,Roof Shape,table:RoofShape.Liability,RoofShape
+73,Coverage A,Hail,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+74,Coverage A,Hail,Utility Update ,table:Utility.Liability,UtilElec
+75,Coverage A,Hail,Utility Update ,table:Utility.Liability,UtilHeat
+76,Coverage A,Hail,Utility Update ,table:Utility.Liability,UtilPlumb
+77,Coverage A,Hail,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+78,Coverage A,Hail,Fortified,table:Fortified.Liability,Fortified
+79,Coverage A,Hail,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+80,Coverage A,Hail,Wind Mitigation,table:Wind Mitigation.Liability,
+81,Coverage A,Hail,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+82,Coverage A,Hail,Coverage Modification,,
+83,Coverage A,Hail,Brushfire,table:Brushfire.Liability,
+84,Coverage A,Hail,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+85,Coverage A,Hail,Foundation Type,table:FoundationType.Liability,Foundation
+86,Coverage A,Hail,ACV Roof,table:ACVRoof.Liability,ACVRoof
+87,Coverage A,Hail,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+88,Coverage A,Hail,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+89,Coverage A,Hail,Occupancy,table:Occupancy.Liability,Occupancy
+90,Coverage A,Hail,Employee Discount,table:EmployeeDiscount,EmployDisc
+91,Coverage A,Hail,IRPM Factor,IFactor,
+92,Coverage A,Hail,Transfer Plan Factor,,
+93,Coverage A,Water,Base Rate,table:BaseRate.Liability,BaseRate
+94,Coverage A,Water,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+95,Coverage A,Water,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+96,Coverage A,Water,Distance to Coast,table:Distance To Coast.Liability,
+97,Coverage A,Water,Acreage,table:Acreage.Liability,Acres
+98,Coverage A,Water,Farm Type,table:Farm_Type.Liability,FarmType
+99,Coverage A,Water,Credit,table:Credit.Liability,Credit
+100,Coverage A,Water,Protection Class,table:Protection Class.Liability,PC
+101,Coverage A,Water,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+102,Coverage A,Water,Construction Type,table:Construction Materials for All.Liability,Constr
+103,Coverage A,Water,Number of Families,table:Number Of Families.Liability,NumFam
+104,Coverage A,Water,TownRowhouse,table:TownRowHouse.Liability,TownRow
+105,Coverage A,Water,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+106,Coverage A,Water,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+107,Coverage A,Water,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+108,Coverage A,Water,Garage Factor,table:Garage Factor.Liability,Garages
+109,Coverage A,Water,Dwelling Claims Factor,,DwellClaims
+110,Coverage A,Water,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+111,Coverage A,Water,New Business Loss Experience Factor,,
+112,Coverage A,Water,Pool Liability,table:Pool.Liability,Pool
+113,Coverage A,Water,Trampoline Liability,table:Trampoline.Liability,Trampoline
+114,Coverage A,Water,Perils Factor,table:Perils.Liability,Perils
+115,Coverage A,Water,Age of Dwelling,,AOD
+116,Coverage A,Water,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+117,Coverage A,Water,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+118,Coverage A,Water,Roof Shape,table:RoofShape.Liability,RoofShape
+119,Coverage A,Water,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+120,Coverage A,Water,Utility Update ,table:Utility.Liability,UtilElec
+121,Coverage A,Water,Utility Update ,table:Utility.Liability,UtilHeat
+122,Coverage A,Water,Utility Update ,table:Utility.Liability,UtilPlumb
+123,Coverage A,Water,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+124,Coverage A,Water,Fortified,table:Fortified.Liability,Fortified
+125,Coverage A,Water,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+126,Coverage A,Water,Wind Mitigation,table:Wind Mitigation.Liability,
+127,Coverage A,Water,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+128,Coverage A,Water,Coverage Modification,,
+129,Coverage A,Water,Brushfire,table:Brushfire.Liability,
+130,Coverage A,Water,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+131,Coverage A,Water,Foundation Type,table:FoundationType.Liability,Foundation
+132,Coverage A,Water,ACV Roof,table:ACVRoof.Liability,ACVRoof
+133,Coverage A,Water,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+134,Coverage A,Water,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+135,Coverage A,Water,Occupancy,table:Occupancy.Liability,Occupancy
+136,Coverage A,Water,Employee Discount,table:EmployeeDiscount,EmployDisc
+137,Coverage A,Water,IRPM Factor,IFactor,
+138,Coverage A,Water,Transfer Plan Factor,,
+139,Coverage A,Theft,Base Rate,table:BaseRate.Liability,BaseRate
+140,Coverage A,Theft,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+141,Coverage A,Theft,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+142,Coverage A,Theft,Distance to Coast,table:Distance To Coast.Liability,
+143,Coverage A,Theft,Acreage,table:Acreage.Liability,Acres
+144,Coverage A,Theft,Farm Type,table:Farm_Type.Liability,FarmType
+145,Coverage A,Theft,Credit,table:Credit.Liability,Credit
+146,Coverage A,Theft,Protection Class,table:Protection Class.Liability,PC
+147,Coverage A,Theft,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+148,Coverage A,Theft,Construction Type,table:Construction Materials for All.Liability,Constr
+149,Coverage A,Theft,Number of Families,table:Number Of Families.Liability,NumFam
+150,Coverage A,Theft,TownRowhouse,table:TownRowHouse.Liability,TownRow
+151,Coverage A,Theft,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+152,Coverage A,Theft,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+153,Coverage A,Theft,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+154,Coverage A,Theft,Garage Factor,table:Garage Factor.Liability,Garages
+155,Coverage A,Theft,Dwelling Claims Factor,,DwellClaims
+156,Coverage A,Theft,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+157,Coverage A,Theft,New Business Loss Experience Factor,,
+158,Coverage A,Theft,Pool Liability,table:Pool.Liability,Pool
+159,Coverage A,Theft,Trampoline Liability,table:Trampoline.Liability,Trampoline
+160,Coverage A,Theft,Perils Factor,table:Perils.Liability,Perils
+161,Coverage A,Theft,Age of Dwelling,,AOD
+162,Coverage A,Theft,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+163,Coverage A,Theft,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+164,Coverage A,Theft,Roof Shape,table:RoofShape.Liability,RoofShape
+165,Coverage A,Theft,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+166,Coverage A,Theft,Utility Update ,table:Utility.Liability,UtilElec
+167,Coverage A,Theft,Utility Update ,table:Utility.Liability,UtilHeat
+168,Coverage A,Theft,Utility Update ,table:Utility.Liability,UtilPlumb
+169,Coverage A,Theft,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+170,Coverage A,Theft,Fortified,table:Fortified.Liability,Fortified
+171,Coverage A,Theft,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+172,Coverage A,Theft,Wind Mitigation,table:Wind Mitigation.Liability,
+173,Coverage A,Theft,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+174,Coverage A,Theft,Coverage Modification,,
+175,Coverage A,Theft,Brushfire,table:Brushfire.Liability,
+176,Coverage A,Theft,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+177,Coverage A,Theft,Foundation Type,table:FoundationType.Liability,Foundation
+178,Coverage A,Theft,ACV Roof,table:ACVRoof.Liability,ACVRoof
+179,Coverage A,Theft,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+180,Coverage A,Theft,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+181,Coverage A,Theft,Occupancy,table:Occupancy.Liability,Occupancy
+182,Coverage A,Theft,Employee Discount,table:EmployeeDiscount,EmployDisc
+183,Coverage A,Theft,IRPM Factor,IFactor,
+184,Coverage A,Theft,Transfer Plan Factor,,
+185,Coverage A,Fire,Base Rate,table:BaseRate.Liability,BaseRate
+186,Coverage A,Fire,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+187,Coverage A,Fire,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+188,Coverage A,Fire,Distance to Coast,table:Distance To Coast.Liability,
+189,Coverage A,Fire,Acreage,table:Acreage.Liability,Acres
+190,Coverage A,Fire,Farm Type,table:Farm_Type.Liability,FarmType
+191,Coverage A,Fire,Credit,table:Credit.Liability,Credit
+192,Coverage A,Fire,Protection Class,table:Protection Class.Liability,PC
+193,Coverage A,Fire,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+194,Coverage A,Fire,Construction Type,table:Construction Materials for All.Liability,Constr
+195,Coverage A,Fire,Number of Families,table:Number Of Families.Liability,NumFam
+196,Coverage A,Fire,TownRowhouse,table:TownRowHouse.Liability,TownRow
+197,Coverage A,Fire,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+198,Coverage A,Fire,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+199,Coverage A,Fire,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+200,Coverage A,Fire,Garage Factor,table:Garage Factor.Liability,Garages
+201,Coverage A,Fire,Dwelling Claims Factor,,DwellClaims
+202,Coverage A,Fire,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+203,Coverage A,Fire,New Business Loss Experience Factor,,
+204,Coverage A,Fire,Pool Liability,table:Pool.Liability,Pool
+205,Coverage A,Fire,Trampoline Liability,table:Trampoline.Liability,Trampoline
+206,Coverage A,Fire,Perils Factor,table:Perils.Liability,Perils
+207,Coverage A,Fire,Age of Dwelling,,AOD
+208,Coverage A,Fire,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+209,Coverage A,Fire,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+210,Coverage A,Fire,Roof Shape,table:RoofShape.Liability,RoofShape
+211,Coverage A,Fire,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+212,Coverage A,Fire,Utility Update ,table:Utility.Liability,UtilElec
+213,Coverage A,Fire,Utility Update ,table:Utility.Liability,UtilHeat
+214,Coverage A,Fire,Utility Update ,table:Utility.Liability,UtilPlumb
+215,Coverage A,Fire,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+216,Coverage A,Fire,Fortified,table:Fortified.Liability,Fortified
+217,Coverage A,Fire,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+218,Coverage A,Fire,Wind Mitigation,table:Wind Mitigation.Liability,
+219,Coverage A,Fire,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+220,Coverage A,Fire,Coverage Modification,,
+221,Coverage A,Fire,Brushfire,table:Brushfire.Liability,
+222,Coverage A,Fire,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+223,Coverage A,Fire,Foundation Type,table:FoundationType.Liability,Foundation
+224,Coverage A,Fire,ACV Roof,table:ACVRoof.Liability,ACVRoof
+225,Coverage A,Fire,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+226,Coverage A,Fire,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+227,Coverage A,Fire,Occupancy,table:Occupancy.Liability,Occupancy
+228,Coverage A,Fire,Employee Discount,table:EmployeeDiscount,EmployDisc
+229,Coverage A,Fire,IRPM Factor,IFactor,
+230,Coverage A,Fire,Transfer Plan Factor,,
+231,Coverage A,Hurricane,Base Rate,table:BaseRate.Liability,BaseRate
+232,Coverage A,Hurricane,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+233,Coverage A,Hurricane,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+234,Coverage A,Hurricane,Distance to Coast,table:Distance To Coast.Liability,
+235,Coverage A,Hurricane,Acreage,table:Acreage.Liability,Acres
+236,Coverage A,Hurricane,Farm Type,table:Farm_Type.Liability,FarmType
+237,Coverage A,Hurricane,Credit,table:Credit.Liability,Credit
+238,Coverage A,Hurricane,Protection Class,table:Protection Class.Liability,PC
+239,Coverage A,Hurricane,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+240,Coverage A,Hurricane,Construction Type,table:Construction Materials for All.Liability,Constr
+241,Coverage A,Hurricane,Number of Families,table:Number Of Families.Liability,NumFam
+242,Coverage A,Hurricane,TownRowhouse,table:TownRowHouse.Liability,TownRow
+243,Coverage A,Hurricane,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+244,Coverage A,Hurricane,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+245,Coverage A,Hurricane,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+246,Coverage A,Hurricane,Garage Factor,table:Garage Factor.Liability,Garages
+247,Coverage A,Hurricane,Dwelling Claims Factor,,DwellClaims
+248,Coverage A,Hurricane,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+249,Coverage A,Hurricane,New Business Loss Experience Factor,,
+250,Coverage A,Hurricane,Pool Liability,table:Pool.Liability,Pool
+251,Coverage A,Hurricane,Trampoline Liability,table:Trampoline.Liability,Trampoline
+252,Coverage A,Hurricane,Perils Factor,table:Perils.Liability,Perils
+253,Coverage A,Hurricane,Age of Dwelling,,AOD
+254,Coverage A,Hurricane,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+255,Coverage A,Hurricane,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+256,Coverage A,Hurricane,Roof Shape,table:RoofShape.Liability,RoofShape
+257,Coverage A,Hurricane,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+258,Coverage A,Hurricane,Utility Update ,table:Utility.Liability,UtilElec
+259,Coverage A,Hurricane,Utility Update ,table:Utility.Liability,UtilHeat
+260,Coverage A,Hurricane,Utility Update ,table:Utility.Liability,UtilPlumb
+261,Coverage A,Hurricane,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+262,Coverage A,Hurricane,Fortified,table:Fortified.Liability,Fortified
+263,Coverage A,Hurricane,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+264,Coverage A,Hurricane,Wind Mitigation,table:Wind Mitigation.Liability,
+265,Coverage A,Hurricane,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+266,Coverage A,Hurricane,Coverage Modification,,
+267,Coverage A,Hurricane,Brushfire,table:Brushfire.Liability,
+268,Coverage A,Hurricane,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+269,Coverage A,Hurricane,Foundation Type,table:FoundationType.Liability,Foundation
+270,Coverage A,Hurricane,ACV Roof,table:ACVRoof.Liability,ACVRoof
+271,Coverage A,Hurricane,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+272,Coverage A,Hurricane,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+273,Coverage A,Hurricane,Occupancy,table:Occupancy.Liability,Occupancy
+274,Coverage A,Hurricane,Employee Discount,table:EmployeeDiscount,EmployDisc
+275,Coverage A,Hurricane,IRPM Factor,IFactor,
+276,Coverage A,Hurricane,Transfer Plan Factor,,
+277,Coverage A,Wind,Base Rate,table:BaseRate.Liability,BaseRate
+278,Coverage A,Wind,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+279,Coverage A,Wind,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+280,Coverage A,Wind,Distance to Coast,table:Distance To Coast.Liability,
+281,Coverage A,Wind,Acreage,table:Acreage.Liability,Acres
+282,Coverage A,Wind,Farm Type,table:Farm_Type.Liability,FarmType
+283,Coverage A,Wind,Credit,table:Credit.Liability,Credit
+284,Coverage A,Wind,Protection Class,table:Protection Class.Liability,PC
+285,Coverage A,Wind,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+286,Coverage A,Wind,Construction Type,table:Construction Materials for All.Liability,Constr
+287,Coverage A,Wind,Number of Families,table:Number Of Families.Liability,NumFam
+288,Coverage A,Wind,TownRowhouse,table:TownRowHouse.Liability,TownRow
+289,Coverage A,Wind,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+290,Coverage A,Wind,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+291,Coverage A,Wind,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+292,Coverage A,Wind,Garage Factor,table:Garage Factor.Liability,Garages
+293,Coverage A,Wind,Dwelling Claims Factor,,DwellClaims
+294,Coverage A,Wind,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+295,Coverage A,Wind,New Business Loss Experience Factor,,
+296,Coverage A,Wind,Pool Liability,table:Pool.Liability,Pool
+297,Coverage A,Wind,Trampoline Liability,table:Trampoline.Liability,Trampoline
+298,Coverage A,Wind,Perils Factor,table:Perils.Liability,Perils
+299,Coverage A,Wind,Age of Dwelling,,AOD
+300,Coverage A,Wind,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+301,Coverage A,Wind,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+302,Coverage A,Wind,Roof Shape,table:RoofShape.Liability,RoofShape
+303,Coverage A,Wind,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+304,Coverage A,Wind,Utility Update ,table:Utility.Liability,UtilElec
+305,Coverage A,Wind,Utility Update ,table:Utility.Liability,UtilHeat
+306,Coverage A,Wind,Utility Update ,table:Utility.Liability,UtilPlumb
+307,Coverage A,Wind,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+308,Coverage A,Wind,Fortified,table:Fortified.Liability,Fortified
+309,Coverage A,Wind,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+310,Coverage A,Wind,Wind Mitigation,table:Wind Mitigation.Liability,
+311,Coverage A,Wind,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+312,Coverage A,Wind,Coverage Modification,,
+313,Coverage A,Wind,Brushfire,table:Brushfire.Liability,
+314,Coverage A,Wind,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+315,Coverage A,Wind,Foundation Type,table:FoundationType.Liability,Foundation
+316,Coverage A,Wind,ACV Roof,table:ACVRoof.Liability,ACVRoof
+317,Coverage A,Wind,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+318,Coverage A,Wind,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+319,Coverage A,Wind,Occupancy,table:Occupancy.Liability,Occupancy
+320,Coverage A,Wind,Employee Discount,table:EmployeeDiscount,EmployDisc
+321,Coverage A,Wind,IRPM Factor,IFactor,
+322,Coverage A,Wind,Transfer Plan Factor,,
+323,Coverage A,Other,Base Rate,table:BaseRate.Liability,BaseRate
+324,Coverage A,Other,Territory Relativities,table:Territory Relativities.Liability,TerrRel
+325,Coverage A,Other,WindHail Excl,table:Wind Hail Exclusion.Liability,WHExcl
+326,Coverage A,Other,Distance to Coast,table:Distance To Coast.Liability,
+327,Coverage A,Other,Acreage,table:Acreage.Liability,Acres
+328,Coverage A,Other,Farm Type,table:Farm_Type.Liability,FarmType
+329,Coverage A,Other,Credit,table:Credit.Liability,Credit
+330,Coverage A,Other,Protection Class,table:Protection Class.Liability,PC
+331,Coverage A,Other,Miles to Fire Department,table:Miles To Fire Department.Liability,MilesToDept
+332,Coverage A,Other,Construction Type,table:Construction Materials for All.Liability,Constr
+333,Coverage A,Other,Number of Families,table:Number Of Families.Liability,NumFam
+334,Coverage A,Other,TownRowhouse,table:TownRowHouse.Liability,TownRow
+335,Coverage A,Other,Stories and Square Feet,table:Sq Feet Stories.Liability,StorSqFt
+336,Coverage A,Other,Replacement Cost Per Sq Foot,table:Repl Cost Sq Ft.Liability,CovARPC
+337,Coverage A,Other,Number of Bathrooms,table:Bathrooms.Liability,NumBaths
+338,Coverage A,Other,Garage Factor,table:Garage Factor.Liability,Garages
+339,Coverage A,Other,Dwelling Claims Factor,,DwellClaims
+340,Coverage A,Other,Farming Claims Factor,table:Farming Claims Factor.Liability,FarmClaims
+341,Coverage A,Other,New Business Loss Experience Factor,,
+342,Coverage A,Other,Pool Liability,table:Pool.Liability,Pool
+343,Coverage A,Other,Trampoline Liability,table:Trampoline.Liability,Trampoline
+344,Coverage A,Other,Perils Factor,table:Perils.Liability,Perils
+345,Coverage A,Other,Age of Dwelling,,AOD
+346,Coverage A,Other,Dwelling Year Built Factor,table:Dwelling Year Built Factor.Liability,DwellYrBuilt
+347,Coverage A,Other,"Age of Roof, Roof Construction",table:AoR.Liability,AOR
+348,Coverage A,Other,Roof Shape,table:RoofShape.Liability,RoofShape
+349,Coverage A,Other,Roof Exclusion,table:RoofExclusion.Liability,RoofExcl
+350,Coverage A,Other,Utility Update ,table:Utility.Liability,UtilElec
+351,Coverage A,Other,Utility Update ,table:Utility.Liability,UtilHeat
+352,Coverage A,Other,Utility Update ,table:Utility.Liability,UtilPlumb
+353,Coverage A,Other,Multipolicy Discount,table:MultipolicyDiscount.Liability,Multipol
+354,Coverage A,Other,Fortified,table:Fortified.Liability,Fortified
+355,Coverage A,Other,Protective Devices (incl Smart Farm),table:ProtectiveDevices.Liability,ProtDev
+356,Coverage A,Other,Wind Mitigation,table:Wind Mitigation.Liability,
+357,Coverage A,Other,Policy Size Relativity,table:PolicySizeRelativity.Liability,CovAPSR
+358,Coverage A,Other,Coverage Modification,,
+359,Coverage A,Other,Brushfire,table:Brushfire.Liability,
+360,Coverage A,Other,Solid Fuel Heating Device Surcharge,table:SolidFuel.Liability,SolidFuel
+361,Coverage A,Other,Foundation Type,table:FoundationType.Liability,Foundation
+362,Coverage A,Other,ACV Roof,table:ACVRoof.Liability,ACVRoof
+363,Coverage A,Other,All Peril Deductible,table:All Perils Deductible.Liability,APDed
+364,Coverage A,Other,Wind Hail Deductible,table:WHDeductible.Liability,WHDed
+365,Coverage A,Other,Occupancy,table:Occupancy.Liability,Occupancy
+366,Coverage A,Other,Employee Discount,table:EmployeeDiscount,EmployDisc
+367,Coverage A,Other,IRPM Factor,IFactor,
+368,Coverage A,Other,Transfer Plan Factor,,
+369,Cov B,,Base Rate,,
+370,Cov B,,Territory Relativities,,
+371,Cov B,,WindHail Excl,,
+372,Cov B,,Distance to Coast,,
+373,Cov B,,Acreage,,
+374,Cov B,,Farm Type,,
+375,Cov B,,Credit,,
+376,Cov B,,Protection Class,,
+377,Cov B,,Miles to Fire Department,,
+378,Cov B,,Construction Type,,
+379,Cov B,,Number of Families,,
+380,Cov B,,TownRowhouse,,
+381,Cov B,,Stories and Square Feet,,
+382,Cov B,,Replacement Cost Per Sq Foot,,
+383,Cov B,,Number of Bathrooms,,
+384,Cov B,,Garage Factor,,
+385,Cov B,,Dwelling Claims Factor,,
+386,Cov B,,Farming Claims Factor,,
+387,Cov B,,New Business Loss Experience Factor,,
+388,Cov B,,Pool Liability,,
+389,Cov B,,Trampoline Liability,,
+390,Cov B,,Perils Factor,,
+391,Cov B,,Age of Dwelling,,
+392,Cov B,,Dwelling Year Built Factor,,
+393,Cov B,,"Age of Roof, Roof Construction",,
+394,Cov B,,Roof Shape,,
+395,Cov B,,Roof Exclusion,,
+396,Cov B,,Utility Update ,,
+397,Cov B,,Multipolicy Discount,,
+398,Cov B,,Fortified,,
+399,Cov B,,Protective Devices (incl Smart Farm),,
+400,Cov B,,Wind Mitigation,,
+401,Cov B,,Policy Size Relativity,,
+402,Cov B,,Coverage Modification,,
+403,Cov B,,Brushfire,,
+404,Cov B,,Solid Fuel Heating Device Surcharge,,
+405,Cov B,,Foundation Type,,
+406,Cov B,,ACV Roof,,
+407,Cov B,,All Peril Deductible,,
+408,Cov B,,Wind Hail Deductible,,
+409,Cov B,,Occupancy,,
+410,Cov B,,Employee Discount,,
+411,Cov B,,IRPM Factor,,
+412,Cov B,,Transfer Plan Factor,,
+413,Cov C,,Base Rate,,
+414,Cov C,,Territory Relativities,,
+415,Cov C,,WindHail Excl,,
+416,Cov C,,Distance to Coast,,
+417,Cov C,,Acreage,,
+418,Cov C,,Farm Type,,
+419,Cov C,,Credit,,
+420,Cov C,,Protection Class,,
+421,Cov C,,Miles to Fire Department,,
+422,Cov C,,Construction Type,,
+423,Cov C,,Number of Families,,
+424,Cov C,,TownRowhouse,,
+425,Cov C,,Stories and Square Feet,,
+426,Cov C,,Replacement Cost Per Sq Foot,,
+427,Cov C,,Number of Bathrooms,,
+428,Cov C,,Garage Factor,,
+429,Cov C,,Dwelling Claims Factor,,
+430,Cov C,,Farming Claims Factor,,
+431,Cov C,,New Business Loss Experience Factor,,
+432,Cov C,,Pool Liability,,
+433,Cov C,,Trampoline Liability,,
+434,Cov C,,Perils Factor,,
+435,Cov C,,Age of Dwelling,,
+436,Cov C,,Dwelling Year Built Factor,,
+437,Cov C,,"Age of Roof, Roof Construction",,
+438,Cov C,,Roof Shape,,
+439,Cov C,,Roof Exclusion,,
+440,Cov C,,Utility Update ,,
+441,Cov C,,Multipolicy Discount,,
+442,Cov C,,Fortified,,
+443,Cov C,,Protective Devices (incl Smart Farm),,
+444,Cov C,,Wind Mitigation,,
+445,Cov C,,Policy Size Relativity,,
+446,Cov C,,Coverage Modification,,
+447,Cov C,,Brushfire,,
+448,Cov C,,Solid Fuel Heating Device Surcharge,,
+449,Cov C,,Foundation Type,,
+450,Cov C,,ACV Roof,,
+451,Cov C,,All Peril Deductible,,
+452,Cov C,,Wind Hail Deductible,,
+453,Cov C,,Occupancy,,
+454,Cov C,,Employee Discount,,
+455,Cov C,,IRPM Factor,,
+456,Cov C,,Transfer Plan Factor,,
+457,Cov D,,Base Rate,,
+458,Cov D,,Territory Relativities,,
+459,Cov D,,WindHail Excl,,
+460,Cov D,,Distance to Coast,,
+461,Cov D,,Acreage,,
+462,Cov D,,Farm Type,,
+463,Cov D,,Credit,,
+464,Cov D,,Protection Class,,
+465,Cov D,,Miles to Fire Department,,
+466,Cov D,,Construction Type,,
+467,Cov D,,Number of Families,,
+468,Cov D,,TownRowhouse,,
+469,Cov D,,Stories and Square Feet,,
+470,Cov D,,Replacement Cost Per Sq Foot,,
+471,Cov D,,Number of Bathrooms,,
+472,Cov D,,Garage Factor,,
+473,Cov D,,Dwelling Claims Factor,,
+474,Cov D,,Farming Claims Factor,,
+475,Cov D,,New Business Loss Experience Factor,,
+476,Cov D,,Pool Liability,,
+477,Cov D,,Trampoline Liability,,
+478,Cov D,,Perils Factor,,
+479,Cov D,,Age of Dwelling,,
+480,Cov D,,Dwelling Year Built Factor,,
+481,Cov D,,"Age of Roof, Roof Construction",,
+482,Cov D,,Roof Shape,,
+483,Cov D,,Roof Exclusion,,
+484,Cov D,,Utility Update ,,
+485,Cov D,,Multipolicy Discount,,
+486,Cov D,,Fortified,,
+487,Cov D,,Protective Devices (incl Smart Farm),,
+488,Cov D,,Wind Mitigation,,
+489,Cov D,,Policy Size Relativity,,
+490,Cov D,,Coverage Modification,,
+491,Cov D,,Brushfire,,
+492,Cov D,,Solid Fuel Heating Device Surcharge,,
+493,Cov D,,Foundation Type,,
+494,Cov D,,ACV Roof,,
+495,Cov D,,All Peril Deductible,,
+496,Cov D,,Wind Hail Deductible,,
+497,Cov D,,Occupancy,,
+498,Cov D,,Employee Discount,,
+499,Cov D,,IRPM Factor,,
+500,Cov D,,Transfer Plan Factor,,
+501,Cov G,,Base Rate,,
+502,Cov G,,Territory Relativities,,
+503,Cov G,,WindHail Excl,,
+504,Cov G,,Distance to Coast,,
+505,Cov G,,Acreage,,
+506,Cov G,,Farm Type,,
+507,Cov G,,Credit,,
+508,Cov G,,Protection Class,,
+509,Cov G,,Miles to Fire Department,,
+510,Cov G,,Construction Type,,
+511,Cov G,,Number of Families,,
+512,Cov G,,TownRowhouse,,
+513,Cov G,,Stories and Square Feet,,
+514,Cov G,,Replacement Cost Per Sq Foot,,
+515,Cov G,,Number of Bathrooms,,
+516,Cov G,,Garage Factor,,
+517,Cov G,,Dwelling Claims Factor,,
+518,Cov G,,Farming Claims Factor,,
+519,Cov G,,New Business Loss Experience Factor,,
+520,Cov G,,Pool Liability,,
+521,Cov G,,Trampoline Liability,,
+522,Cov G,,Perils Factor,,
+523,Cov G,,Age of Dwelling,,
+524,Cov G,,Dwelling Year Built Factor,,
+525,Cov G,,"Age of Roof, Roof Construction",,
+526,Cov G,,Roof Shape,,
+527,Cov G,,Roof Exclusion,,
+528,Cov G,,Utility Update ,,
+529,Cov G,,Multipolicy Discount,,
+530,Cov G,,Fortified,,
+531,Cov G,,Protective Devices (incl Smart Farm),,
+532,Cov G,,Wind Mitigation,,
+533,Cov G,,Policy Size Relativity,,
+534,Cov G,,Coverage Modification,,
+535,Cov G,,Brushfire,,
+536,Cov G,,Solid Fuel Heating Device Surcharge,,
+537,Cov G,,Foundation Type,,
+538,Cov G,,ACV Roof,,
+539,Cov G,,All Peril Deductible,,
+540,Cov G,,Wind Hail Deductible,,
+541,Cov G,,Occupancy,,
+542,Cov G,,Employee Discount,,
+543,Cov G,,IRPM Factor,,
+544,Cov G,,Transfer Plan Factor,,
+545,Cov H,,Base Rate,,
+546,Cov H,,Territory Relativities,,
+547,Cov H,,WindHail Excl,,
+548,Cov H,,Distance to Coast,,
+549,Cov H,,Acreage,,
+550,Cov H,,Farm Type,,
+551,Cov H,,Credit,,
+552,Cov H,,Protection Class,,
+553,Cov H,,Miles to Fire Department,,
+554,Cov H,,Construction Type,,
+555,Cov H,,Number of Families,,
+556,Cov H,,TownRowhouse,,
+557,Cov H,,Stories and Square Feet,,
+558,Cov H,,Replacement Cost Per Sq Foot,,
+559,Cov H,,Number of Bathrooms,,
+560,Cov H,,Garage Factor,,
+561,Cov H,,Dwelling Claims Factor,,
+562,Cov H,,Farming Claims Factor,,
+563,Cov H,,New Business Loss Experience Factor,,
+564,Cov H,,Pool Liability,,
+565,Cov H,,Trampoline Liability,,
+566,Cov H,,Perils Factor,,
+567,Cov H,,Age of Dwelling,,
+568,Cov H,,Dwelling Year Built Factor,,
+569,Cov H,,"Age of Roof, Roof Construction",,
+570,Cov H,,Roof Shape,,
+571,Cov H,,Roof Exclusion,,
+572,Cov H,,Utility Update ,,
+573,Cov H,,Multipolicy Discount,,
+574,Cov H,,Fortified,,
+575,Cov H,,Protective Devices (incl Smart Farm),,
+576,Cov H,,Wind Mitigation,,
+577,Cov H,,Policy Size Relativity,,
+578,Cov H,,Coverage Modification,,
+579,Cov H,,Brushfire,,
+580,Cov H,,Solid Fuel Heating Device Surcharge,,
+581,Cov H,,Foundation Type,,
+582,Cov H,,ACV Roof,,
+583,Cov H,,All Peril Deductible,,
+584,Cov H,,Wind Hail Deductible,,
+585,Cov H,,Occupancy,,
+586,Cov H,,Employee Discount,,
+587,Cov H,,IRPM Factor,,
+588,Cov H,,Transfer Plan Factor,,
+589,Cov O,,Base Rate,,
+590,Cov O,,Territory Relativities,,
+591,Cov O,,WindHail Excl,,
+592,Cov O,,Distance to Coast,,
+593,Cov O,,Acreage,,
+594,Cov O,,Farm Type,,
+595,Cov O,,Structure Type,,
+596,Cov O,,Credit,,
+597,Cov O,,Protection Class,,
+598,Cov O,,Miles to Fire Department,,
+599,Cov O,,Construction Type,,
+600,Cov O,,Stories and Square Feet,,
+601,Cov O,,Hay Storage & Open Sides,,
+602,Cov O,,Confinement Factor,,
+603,Cov O,,Brooder Heater Surcharge,,
+604,Cov O,,Dwelling Claims Factor,,
+605,Cov O,,Farming Claims Factor,,
+606,Cov O,,New Business Loss Experience Factor,,
+607,Cov O,,Perils Factor,,
+608,Cov O,,Age of Structure,,
+609,Cov O,,"Age of Roof, Roof Construction",,
+610,Cov O,,"Age of Roof, Roof Construction",,
+611,Cov O,,Roof Exclusion,,
+612,Cov O,,Multipolicy Discount,,
+613,Cov O,,Protective Devices (incl Smart Farm),,
+614,Cov O,,Policy Size Relativity,,
+615,Cov O,,Coverage Modification,,
+616,Cov O,,Brushfire,,
+617,Cov O,,Solid Fuel Heating Device Surcharge,,
+618,Cov O,,ACV Roof,,
+619,Cov O,,All Peril Deductible,,
+620,Cov O,,Wind Hail Deductible,,
+621,Cov O,,Employee Discount,,
+622,Cov O,,IRPM Factor,,
+623,Cov O,,Transfer Plan Factor,,
+624,Cov E,,Base Rate,,
+625,Cov E,,Territory Relativities,,
+626,Cov E,,WindHail Excl,,
+627,Cov E,,Acreage,,
+628,Cov E,,Farm Type,,
+629,Cov E,,Credit,,
+630,Cov E,,Protection Class,,
+631,Cov E,,Dwelling Claims Factor,,
+632,Cov E,,Farming Claims Factor,,
+633,Cov E,,New Business Loss Experience Factor,,
+634,Cov E,,Multipolicy Discount,,
+635,Cov E,,Policy Size Relativity,,
+636,Cov E,,All Peril Deductible,,
+637,Cov E,,Employee Discount,,
+638,Cov E,,IRPM Factor,,
+639,Cov E,,Transfer Plan Factor,,
+640,Cov F,,Base Rate,,
+641,Cov F,,Territory Relativities,,
+642,Cov F,,WindHail Excl,,
+643,Cov F,,Acreage,,
+644,Cov F,,Farm Type,,
+645,Cov F,,Farm Property Class,,
+646,Cov F,,Credit,,
+647,Cov F,,Protection Class,,
+648,Cov F,,Dwelling Claims Factor,,
+649,Cov F,,Farming Claims Factor,,
+650,Cov F,,New Business Loss Experience Factor,,
+651,Cov F,,Age of Equipment,,
+652,Cov F,,Multipolicy Discount,,
+653,Cov F,,Policy Size Relativity,,
+654,Cov F,,All Peril Deductible,,
+655,Cov F,,Employee Discount,,
+656,Cov F,,IRPM Factor,,
+657,Cov F,,Transfer Plan Factor,,
+658,Personal Liability Only,,Base Rate,,
+659,Personal Liability Only,,Territory Relativities,,
+660,Personal Liability Only,,Credit,,
+661,Personal Liability Only,,Number of Families,,
+662,Personal Liability Only,,TownRowhouse,,
+663,Personal Liability Only,,Dwelling Claims Factor,,
+664,Personal Liability Only,,New Business Loss Experience Factor,,
+665,Personal Liability Only,,Pool Liability,,
+666,Personal Liability Only,,Trampoline Liability,,
+667,Personal Liability Only,,Coverage Modification,,
+668,Personal Liability Only,,Employee Discount,,
+669,Coverage A,Water,Families,table:Number Of Families.Water,Families

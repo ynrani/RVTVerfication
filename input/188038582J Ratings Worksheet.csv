@@ -1,0 +1,823 @@
+﻿Instruction, , , , , , , , , , Result, Operator, (, Operand, ), Actual Value(s)
+entity.FRMDwelling, , , , , , , , , , , , , , , 
+Dwelling:(1), , , , , , , , , , , , , , , 
+Coverage A - Dwelling - Water, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Water (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Water, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Water, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Water, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Water, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.9370072000, ←, , table:PolicySizeRelativity.Water, , "(5, 225004, Cov A) = 0.9370072"
+, ContentOnlyFactor, , , , , , , , , 1.026613104000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Water, , "(<<1990,1990>>, Cov A, 2) = 1.034"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Water, , "(<<113,113>>) = 0.984"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Water, , "(1, 2) = 1.009"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Water, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Water, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Water, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Water, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Water, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Water, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Water, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 51.91501665414716307396771435906935132160000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(5, Cov A) = 194.43"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 1.0266131
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Water, , "(5, Cov A, 46508) = 0.917"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Water, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Water, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Water, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Water, , "(5, <<850,850>>, Cov A) = 0.724"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Water, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Water, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Water, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Water, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Water, , "(5, false, <<42,42>>) = 0.905"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Water, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Water, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Water, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Water, , "(5, Cov A, true) = 1.05"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(5, false, true, true, false, false, false) = 0.951"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Water, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.9370072
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Water, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Water, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Water, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Water, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Water, , "(5, Cov A, 3, <<225004,225004>>) = 0.542"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Water, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Water, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, BaseRate, , , , , , , , , 51.9150000, ←, , CostData.BaseRate, , 51.915
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Water, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 51.9150, ←, , CostData.BaseRate, , 51.915
+, TermAmount, , , , , , , , , 51.92, ←, , CostData.BaseRate, , 51.915
+, , CONTINUE, , , , , , , , , R, , .01, , 51.92
+Earthquake Coverage, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, dwelling_erthquake (1), , , , , , , , , , , , , , 
+, CovAFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CovBFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CovCFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CovDFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CovALimit, , , , , , , , , 0.0, ←, , 0, , 0
+, CovALimit, , , , , , , , , 225000, ←, , RatingInfo.EnteredCovALimit, , 225000
+, CovAFactor, , , , , , , , , 77.616000000000000000000000000, ←, , table:EQ_Zip, , "(46508, FRMDwellingCovA, Frame-Wood, false) = 0.35"
+, , CONTINUE, , , , , , , , , ×, (, CovALimit, , 225000
+, , CONTINUE, , , , , , , , , ÷, , 1000, ), 1000
+, , CONTINUE, , , , , , , , , ×, , table:EQ_Ded, , "(5, Frame-Wood) = 1.12"
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 1) = 0.88"
+, CovBFactor, , , , , , , , , 0E-31, ←, , table:EQ_IncrLim, , "(46508, FRMPrivateStructCovB, Frame-Wood) = 0.35"
+, , CONTINUE, , , , , , , , , ×, (, RatingInfo.EnteredCovBLimit, , 22500
+, , CONTINUE, , , , , , , , , −, (, CovALimit, , 225000
+, , CONTINUE, , , , , , , , , ×, , 0.1, )), 0.1
+, , CONTINUE, , , , , , , , , ÷, , 1000, , 1000
+, , CONTINUE, , , , , , , , , ×, , table:EQ_Ded, , "(5, Frame-Wood) = 1.12"
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 1) = 0.88"
+, Limit, , , , , , , , , 3.0000, ←, (, RatingInfo.EnteredCovCLimit, , 157503
+, , CONTINUE, , , , , , , , , −, (, CovALimit, , 225000
+, , CONTINUE, , , , , , , , , ×, , 0.7, )), 0.7
+, Limit, , , , , , , , , 0.0030, ←, , "max(0, Limit)", , "max(0, 3) = 3"
+, , CONTINUE, , , , , , , , , ÷, , 1000, , 1000
+, CovCFactor, , , , , , , , , 0.0014784000000000000000000000000, ←, , table:EQ_IncrLim, , "(46508, FRMPersonalPropertyCovC, Frame-Wood) = 0.5"
+, , CONTINUE, , , , , , , , , ×, , table:EQ_Ded, , "(5, Frame-Wood) = 1.12"
+, , CONTINUE, , , , , , , , , ×, , Limit, , 0.003
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 1) = 0.88"
+, CovDFactor, , , , , , , , , 7.7620139520000000000000000000000, ←, , table:EQ_IncrLim, , "(46508, z7jjmkjviv2dicv9t4i6gtr5vf8, Frame-Wood) = 0.35"
+, , CONTINUE, , , , , , , , , ×, (, RatingInfo.EnteredCovDLimit, , 67501.2
+, , CONTINUE, , , , , , , , , −, (, CovALimit, , 225000
+, , CONTINUE, , , , , , , , , ×, , 0.2, )), 0.2
+, , CONTINUE, , , , , , , , , ÷, , 1000, , 1000
+, , CONTINUE, , , , , , , , , ×, , table:EQ_Ded, , "(5, Frame-Wood) = 1.12"
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 1) = 0.88"
+, BaseRate, , , , , , , , , 85.3794923520000000000000000000000, ←, , CovAFactor, , 77.616
+, , CONTINUE, , , , , , , , , +, , CovBFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CovCFactor, , 0.0014784
+, , CONTINUE, , , , , , , , , +, , CovDFactor, , 7.76201395
+, AdjustedRate, , , , , , , , , 85.3795, ←, , CostData.BaseRate, , 85.3795
+, TermAmount, , , , , , , , , 85.38, ←, , CostData.BaseRate, , 85.3795
+, , CONTINUE, , , , , , , , , R, , .01, , 85.38
+Coverage A - Dwelling - Theft, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Theft (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Theft, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Theft, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Theft, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Theft, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.9560056000, ←, , table:PolicySizeRelativity.Theft, , "(5, 225004, Cov A) = 0.9560056"
+, ContentOnlyFactor, , , , , , , , , 0.995000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Theft, , "(<<1990,1990>>, Cov A, 2) = 0.995"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Theft, , "(<<113,113>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Theft, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Theft, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Theft, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Theft, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Theft, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Theft, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Theft, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Theft, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 2.2964283824821433522219727936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(5, Cov A) = 21.58"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 0.995
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Theft, , "(5, Cov A, 46508) = 1.091"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Theft, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Theft, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Theft, , "(5, <<850,850>>, Cov A) = 0.693"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Theft, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Theft, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Theft, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Theft, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Theft, , "(5, false, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Theft, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Theft, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Theft, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Theft, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(5, false, true, true, false, false, false) = 0.837"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Theft, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.9560056
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Theft, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Theft, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Theft, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Theft, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(5, Cov A, 3, <<225004,225004>>) = 0.218"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Theft, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Theft, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, BaseRate, , , , , , , , , 2.2964000, ←, , CostData.BaseRate, , 2.2964
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Theft, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 2.2964, ←, , CostData.BaseRate, , 2.2964
+, TermAmount, , , , , , , , , 2.30, ←, , CostData.BaseRate, , 2.2964
+, , CONTINUE, , , , , , , , , R, , .01, , 2.30
+Coverage A - Dwelling - Fire, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Fire (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.7000000000000000000000000000000000000000, ←, , table:Number Of Families.Fire, , "(5, 4) = 1.7"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Fire, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Fire, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Fire, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.8650160000, ←, , table:PolicySizeRelativity.Fire, , "(5, 225004, Cov A) = 0.865016"
+, ContentOnlyFactor, , , , , , , , , 0.950656005000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Fire, , "(<<1990,1990>>, Cov A, 2) = 1.017"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Fire, , "(<<113,113>>) = 0.949"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Fire, , "(1, 2) = 0.985"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Fire, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Fire, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Fire, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Fire, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Fire, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Fire, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Fire, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 173.5422423060728706593224005402656575680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(5, Cov A) = 374.37"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 0.950656
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Fire, , "(5, Cov A, 46508) = 0.733"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Fire, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Fire, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Fire, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Fire, , "(5, <<850,850>>, Cov A) = 0.674"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Fire, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Fire, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Fire, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Fire, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1.7
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Fire, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Fire, , "(5, false, <<42,42>>) = 1.095"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Fire, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Fire, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(5, false, true, true, false, false, false) = 0.827"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Fire, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.865016
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Fire, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Fire, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Fire, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(5, Cov A, 3, <<225004,225004>>) = 0.914"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Fire, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Fire, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Fire, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, BaseRate, , , , , , , , , 173.5422000, ←, , CostData.BaseRate, , 173.5422
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Fire, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 173.5422, ←, , CostData.BaseRate, , 173.5422
+, TermAmount, , , , , , , , , 173.54, ←, , CostData.BaseRate, , 173.5422
+, , CONTINUE, , , , , , , , , R, , .01, , 173.54
+Coverage A - Dwelling - Liability, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Liaiblity (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 0E-40, ←, , table:Number Of Families.Liability, , "(5, 4) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Liability, , "(5, 4) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Liability, , "(5, true, true) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Liability, , "(5, true) = 0"
+, PolicySizeFactor, , , , , , , , , 0E-10, ←, , table:PolicySizeRelativity.Liability, , "(5, 225004, Cov A) = 0"
+, ContentOnlyFactor, , , , , , , , , 0E-87, ←, , table:Sq Feet Stories.Liability, , "(<<1990,1990>>, Cov A, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Liability, , "(<<113,113>>) = 0.956"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Liability, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Liability, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Liability, , "(5, Special, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Liability, , "(5, Heating, <<42,42>>, <<42,42>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Liability, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Liability, , "(5, Electrical, <<42,42>>, <<42,42>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Liability, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Liability, , "(5, Max, Cov A) = 0"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+, BaseRate, , , , , , , , , 0E-397, ←, , table:BaseRate.Liability, , "(5, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 0
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Liability, , "(5, Cov A, 46508) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Liability, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Liability, , "(5, Other, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Liability, , "(5, <<850,850>>, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Liability, , "(5, 10, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Liability, , "(5, 5to7miles, Cov A) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Liability, , "(5, Cov A, Frame-Wood) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Liability, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Liability, , "(5, false, <<42,42>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Liability, , "(5, false, 1, <<1977,1977>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Liability, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Liability, , "(5, TurretModeratePitch, true) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Liability, , "(5, Cov A, true) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(5, false, true, true, false, false, false) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Liability, , "(5, None) = 0"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 0
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Liability, , "(5, <<0,0>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Liability, , "(5, Cov A, false, false, false, false) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Liability, , "(5, FullBasement) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Liability, , "(5, false, Cov A, <<10,10>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(5, Cov A, 3, <<225004,225004>>) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Liability, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 0"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Liability, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, BaseRate, , , , , , , , , 0E-11, ←, , CostData.BaseRate, , 0
+, , CONTINUE, , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+, BaseRate, , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Liability, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+, TermAmount, , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, , CONTINUE, , , , , , , , , R, , .01, , 0.00
+Coverage A - Dwelling - Wind, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Wind (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Wind, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Wind, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Wind, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Wind, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.9430064000, ←, , table:PolicySizeRelativity.Wind, , "(5, 225004, Cov A) = 0.9430064"
+, ContentOnlyFactor, , , , , , , , , 0.9603840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Wind, , "(<<1990,1990>>, Cov A, 2) = 0.976"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Wind, , "(<<113,113>>) = 0.984"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Wind, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Wind, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Wind, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Wind, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Wind, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Wind, , "(5, Roofing, <<10,10>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Wind, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Wind, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Wind, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 177.45167834390723364775624450672558080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(5, Cov A) = 681.68"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 0.960384
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Wind, , "(5, Cov A, 46508) = 0.927"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Wind, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Wind, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Wind, , "(5, <<850,850>>, Cov A) = 0.758"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Wind, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Wind, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Wind, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Wind, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Wind, , "(5, false, <<42,42>>) = 0.891"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Wind, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Wind, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Wind, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Wind, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(5, false, true, true, false, false, false) = 0.995"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Wind, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.9430064
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Wind, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Wind, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Wind, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Wind, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(5, Cov A, 3, <<225004,225004>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Wind, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 0.569"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Wind, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, BaseRate, , , , , , , , , 177.4517000, ←, , CostData.BaseRate, , 177.4517
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Wind, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 177.4517, ←, , CostData.BaseRate, , 177.4517
+, TermAmount, , , , , , , , , 177.45, ←, , CostData.BaseRate, , 177.4517
+, , CONTINUE, , , , , , , , , R, , .01, , 177.45
+Coverage A - Dwelling - Other, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Other (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Other, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Other, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Other, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Other, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.9020112000, ←, , table:PolicySizeRelativity.Other, , "(5, 225004, Cov A) = 0.9020112"
+, ContentOnlyFactor, , , , , , , , , 1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Other, , "(<<1990,1990>>, Cov A, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Other, , "(<<113,113>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Other, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Other, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Other, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Other, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Other, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Other, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Other, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Other, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 19.47871638782798795437677115392000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(5, Cov A) = 105.94"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Other, , "(5, Cov A, 46508) = 0.846"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Other, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Other, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Other, , "(5, <<850,850>>, Cov A) = 0.783"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Other, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Other, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Other, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Other, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Other, , "(5, false, <<42,42>>) = 1.242"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Other, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Other, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Other, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Other, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Other, , "(5, null, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(5, false, true, true, false, false, false) = 0.943"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Other, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.9020112
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Other, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Other, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Other, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Other, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Other, , "(5, Cov A, 3, <<225004,225004>>) = 0.324"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Other, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Other, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, BaseRate, , , , , , , , , 19.4787000, ←, , CostData.BaseRate, , 19.4787
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Other, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 19.4787, ←, , CostData.BaseRate, , 19.4787
+, TermAmount, , , , , , , , , 19.48, ←, , CostData.BaseRate, , 19.4787
+, , CONTINUE, , , , , , , , , R, , .01, , 19.48
+Coverage A - Dwelling - Hail, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Hail (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Hail, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Hail, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Hail, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Hail, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.8860128000, ←, , table:PolicySizeRelativity.Hail, , "(5, 225004, Cov A) = 0.8860128"
+, ContentOnlyFactor, , , , , , , , , 0.976108000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Hail, , "(<<1990,1990>>, Cov A, 2) = 0.994"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Hail, , "(<<113,113>>) = 0.982"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Hail, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Hail, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Hail, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hail, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hail, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hail, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Hail, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Hail, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 156.76959016877681609946595651829760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(5, Cov A) = 327.15"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 0.976108
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Hail, , "(5, Cov A, 46508) = 0.927"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Hail, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Hail, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Hail, , "(5, <<850,850>>, Cov A) = 0.963"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Hail, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Hail, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Hail, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Hail, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Hail, , "(5, false, <<42,42>>) = 0.938"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Hail, , "(5, false, 1, <<1977,1977>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Hail, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Hail, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Hail, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hail, , "(5, null, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(5, false, true, true, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Hail, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.8860128
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Hail, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Hail, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Hail, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Hail, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(5, Cov A, 3, <<225004,225004>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Hail, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 0.816"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Hail, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, BaseRate, , , , , , , , , 156.7696000, ←, , CostData.BaseRate, , 156.7696
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Hail, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 156.7696, ←, , CostData.BaseRate, , 156.7696
+, TermAmount, , , , , , , , , 156.77, ←, , CostData.BaseRate, , 156.7696
+, , CONTINUE, , , , , , , , , R, , .01, , 156.77
+Coverage A - Dwelling - Hurricane, , , , , , , , , , , , , , , 
+, FRM_RB_INDIANA (1), , , , , , , , , , , , , , 
+, Coverage_Hurricane (1), , , , , , , , , , , , , , 
+, PolicySizeFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, ContentOnlyFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, AcreageFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, RateFactor, , , , , , , , , 1.0000000000000000000000000000000000000000, ←, , table:Number Of Families.Hurricane, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:TownRowHouse.Hurricane, , "(5, 4) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Pool.Hurricane, , "(5, true, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Trampoline.Hurricane, , "(5, true) = 1"
+, PolicySizeFactor, , , , , , , , , 0.9430064000, ←, , table:PolicySizeRelativity.Hurricane, , "(5, 225004, Cov A) = 0.9430064"
+, ContentOnlyFactor, , , , , , , , , 1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:Sq Feet Stories.Hurricane, , "(<<1990,1990>>, Cov A, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Repl Cost Sq Ft.Hurricane, , "(<<113,113>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Bathrooms.Hurricane, , "(1, 2) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Garage Factor.Hurricane, , (Basement-2_Ext) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Perils.Hurricane, , "(5, Special, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hurricane, , "(5, Heating, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hurricane, , "(5, Electrical, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hurricane, , "(5, Plumbing, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Mitigation.Hurricane, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, WindMitigationFactor, , , , , , , , , 1.0000000000, ←, , table:Wind Mitigation.Hurricane, , "(TurretModeratePitch, null, <<1977,1977>>, Kosciusko) = 1"
+, IFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, JFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, KFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, NFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, OFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, QFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartCameraFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartLightFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, SmartSmokeAlarmFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, WaterLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GasLeakgDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, GeneratorFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, AutTempDetFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, ADFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, CRFactor, , , , , , , , , 0.0, ←, , 0, , 0
+, MaxCreditPerPeril, , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Hurricane, , "(5, Max, Cov A) = 0.2"
+, AllDiscount, , , , , , , , , 0.0, ←, , IFactor, , 0
+, , CONTINUE, , , , , , , , , +, , JFactor, , 0
+, , CONTINUE, , , , , , , , , +, , KFactor, , 0
+, , CONTINUE, , , , , , , , , +, , MFactor, , 0
+, , CONTINUE, , , , , , , , , +, , NFactor, , 0
+, , CONTINUE, , , , , , , , , +, , OFactor, , 0
+, , CONTINUE, , , , , , , , , +, , QFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartCameraFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, , CONTINUE, , , , , , , , , +, , SmartLightFactor, , 0
+, , CONTINUE, , , , , , , , , +, , AutTempDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GeneratorFactor, , 0
+, , CONTINUE, , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , GasLeakgDetFactor, , 0
+, , CONTINUE, , , , , , , , , +, , ADFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CFactor, , 0
+, , CONTINUE, , , , , , , , , +, , CRFactor, , 0
+, FinalFactor, , , , , , , , , 1.0, ←, , 1, , 1
+, , CONTINUE, , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+, BaseRate, , , , , , , , , 7.53442097969176400171971584000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(5, Cov A) = 8.39"
+, , CONTINUE, , , , , , , , , ×, , ContentOnlyFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(5, Cov A, 46508) = 1.118"
+, , CONTINUE, , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, , CONTINUE, , , , , , , , , ×, , table:Distance To Coast.Hurricane, , "(46508, <<999.990,999.990>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , AcreageFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(5, Other, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Credit.Hurricane, , "(5, <<850,850>>, Cov A) = 0.758"
+, , CONTINUE, , , , , , , , , ×, , table:Protection Class.Hurricane, , "(5, 10, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Miles To Fire Department.Hurricane, , "(5, 5to7miles, Cov A) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Construction Materials for All.Hurricane, , "(5, Cov A, Frame-Wood) = 0.97"
+, , CONTINUE, , , , , , , , , ×, , table:Farming Claims Factor.Hurricane, , "(5, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, , CONTINUE, , , , , , , , , ×, , RateFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling_Age.Hurricane, , "(5, false, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Dwelling Year Built Factor.Hurricane, , "(5, false, 1, <<1977,1977>>) = 1.638"
+, , CONTINUE, , , , , , , , , ×, , table:AoR.Hurricane, , "(5, Cov A, 1, Shingle_Asphalt, <<10,10>>, true, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofShape.Hurricane, , "(5, TurretModeratePitch, true) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:RoofExclusion.Hurricane, , "(5, Cov A, true) = 0.95"
+, , CONTINUE, , , , , , , , , ×, , table:Utility.Hurricane, , "(5, null, <<42,42>>, <<42,42>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(5, false, true, true, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:Fortified.Hurricane, , "(5, None) = 1"
+, , CONTINUE, , , , , , , , , ×, , FinalFactor, , 1
+, , CONTINUE, , , , , , , , , ×, , PolicySizeFactor, , 0.9430064
+, , CONTINUE, , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, , CONTINUE, , , , , , , , , ×, , table:Brushfire.Hurricane, , "(5, <<0,0>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:SolidFuel.Hurricane, , "(5, Cov A, false, false, false, false) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:FoundationType.Hurricane, , "(5, FullBasement) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:ACVRoof.Hurricane, , "(5, false, Cov A, <<10,10>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(5, Cov A, 3, <<225004,225004>>) = 1"
+, , CONTINUE, , , , , , , , , ×, , table:WHDeductible.Hurricane, , "(5, false, Cov A, 3, <<225004,225004>>, 1) = 0.846"
+, , CONTINUE, , , , , , , , , ×, , table:Occupancy.Hurricane, , (Primary) = 1
+, , CONTINUE, , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 5) = 0.88"
+, BaseRate, , , , , , , , , 7.5344000, ←, , CostData.BaseRate, , 7.5344
+, , CONTINUE, , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(5, Cov A) = 0"
+, AdjustedRate, , , , , , , , , 7.5344, ←, , CostData.BaseRate, , 7.5344
+, TermAmount, , , , , , , , , 7.53, ←, , CostData.BaseRate, , 7.5344
+, , CONTINUE, , , , , , , , , R, , .01, , 7.53
+Line-level, , , , , , , , , , , , , , , 
+Private Power and Light Poles Increased Limits, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+PvtPwrLight (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0E-41, ←, , table:Endorsement Property, , (FRMPrivPowLightPoleIncLimCov) = 36
+, CONTINUE, , , , , , , , , , ×, (, CoverageInfo.PrivatePowerLightPolesCovTermLimit, , 2500
+, CONTINUE, , , , , , , , , , −, , 2500, ), 2500
+, CONTINUE, , , , , , , , , , ÷, , 1000, , 1000
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Optional Coverage, , "(1, <<850,850>>, Optional) = 0.741"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Optional Coverage, , "(1, false, true, true, false, false, false) = 0.932"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(true, 1) = 0.88"
+BaseRate, , , , , , , , , , 0E-11, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00

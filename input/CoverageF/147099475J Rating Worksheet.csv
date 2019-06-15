@@ -1,0 +1,2063 @@
+﻿Instruction, , , , , , , , , , Result, Operator, (, Operand, ), Actual Value(s)
+Line-level, , , , , , , , , , , , , , , 
+Scheduled Farm Personal Property ( Poultry ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9520000000, ←, , table:PolicySizeRelativity.Liability, , "(1, 2145, Cov F) = 0.952"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 37.8244190396972099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Poultry) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.952
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<2145,2145>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 37.82440000000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 37.8244000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 37.8244, ←, , CostData.BaseRate, , 37.8244
+TermAmount, , , , , , , , , , 37.82, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , R, , .01, , 37.82
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.0854400000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 8544, Cov F) = 0.08544"
+BaseRate, , , , , , , , , , 0.2122597027200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08544
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<8544,8544>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.21230000000, ←, , CostData.BaseRate, , 0.2123
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.2123000, ←, , CostData.BaseRate, , 0.2123
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.2123, ←, , CostData.BaseRate, , 0.2123
+TermAmount, , , , , , , , , , 0.21, ←, , CostData.BaseRate, , 0.2123
+, CONTINUE, , , , , , , , , , R, , .01, , 0.21
+Scheduled Farm Personal Property ( Machinery ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0564700000, ←, , table:PolicySizeRelativity.Hail, , "(1, 5647, Cov F) = 0.05647"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.0258028304930100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.05647
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<5647,5647>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.02580000000, ←, , CostData.BaseRate, , 0.0258
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0258000, ←, , CostData.BaseRate, , 0.0258
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0258, ←, , CostData.BaseRate, , 0.0258
+TermAmount, , , , , , , , , , 0.03, ←, , CostData.BaseRate, , 0.0258
+, CONTINUE, , , , , , , , , , R, , .01, , 0.03
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Other (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 11.112000000, ←, , CoverageInfo.CoverageFOtherCost, , 74.08
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Other, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 11.1120, ←, , CostData.BaseRate, , 11.112
+TermAmount, , , , , , , , , , 11.11, ←, , CostData.BaseRate, , 11.112
+, CONTINUE, , , , , , , , , , R, , .01, , 11.11
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.1250000000, ←, , table:PolicySizeRelativity.Fire, , "(1, 12500, Cov F) = 0.125"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 9.2272136325866875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Cotton Harvesting Equipment) = 1.4"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.125
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<12500,12500>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 9.22720000000, ←, , CostData.BaseRate, , 9.2272
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 9.2272000, ←, , CostData.BaseRate, , 9.2272
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 9.2272, ←, , CostData.BaseRate, , 9.2272
+TermAmount, , , , , , , , , , 9.23, ←, , CostData.BaseRate, , 9.2272
+, CONTINUE, , , , , , , , , , R, , .01, , 9.23
+Scheduled Farm Personal Property ( Combines ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Liability (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 2.130500000, ←, , CoverageInfo.CoverageFLiabilityCost, , 42.61
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Liability, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 2.1305, ←, , CostData.BaseRate, , 2.1305
+TermAmount, , , , , , , , , , 2.13, ←, , CostData.BaseRate, , 2.1305
+, CONTINUE, , , , , , , , , , R, , .01, , 2.13
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0854400000, ←, , table:PolicySizeRelativity.Hail, , "(1, 8544, Cov F) = 0.08544"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.0390400892035200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08544
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<8544,8544>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.03900000000, ←, , CostData.BaseRate, , 0.039
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0390000, ←, , CostData.BaseRate, , 0.039
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0390, ←, , CostData.BaseRate, , 0.039
+TermAmount, , , , , , , , , , 0.04, ←, , CostData.BaseRate, , 0.039
+, CONTINUE, , , , , , , , , , R, , .01, , 0.04
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.1772500000, ←, , table:PolicySizeRelativity.Theft, , "(1, 12500, Cov F) = 0.17725"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 9.3126769440705000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Cotton Harvesting Equipment) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.17725
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<12500,12500>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 9.31270000000, ←, , CostData.BaseRate, , 9.3127
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 9.3127000, ←, , CostData.BaseRate, , 9.3127
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 9.3127, ←, , CostData.BaseRate, , 9.3127
+TermAmount, , , , , , , , , , 9.31, ←, , CostData.BaseRate, , 9.3127
+, CONTINUE, , , , , , , , , , R, , .01, , 9.31
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0854400000, ←, , table:PolicySizeRelativity.Wind, , "(1, 8544, Cov F) = 0.08544"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 9.4691111267095200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08544
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<8544,8544>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 9.46910000000, ←, , CostData.BaseRate, , 9.4691
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 9.4691000, ←, , CostData.BaseRate, , 9.4691
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 9.4691, ←, , CostData.BaseRate, , 9.4691
+TermAmount, , , , , , , , , , 9.47, ←, , CostData.BaseRate, , 9.4691
+, CONTINUE, , , , , , , , , , R, , .01, , 9.47
+Scheduled Farm Personal Property ( Machinery ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.0564700000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 5647, Cov F) = 0.05647"
+BaseRate, , , , , , , , , , 0.1402891551100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.05647
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<5647,5647>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.14030000000, ←, , CostData.BaseRate, , 0.1403
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.1403000, ←, , CostData.BaseRate, , 0.1403
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.1403, ←, , CostData.BaseRate, , 0.1403
+TermAmount, , , , , , , , , , 0.14, ←, , CostData.BaseRate, , 0.1403
+, CONTINUE, , , , , , , , , , R, , .01, , 0.14
+Farm Personal Liability - Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Liaiblity (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(4, <<1520,1520>>, Cov A) = 2.627"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Liability, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0.2000000000, ←, , table:ProtectiveDevices.Liability, , "(4, Max, Cov A) = 0.2"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0.2) = 0"
+BaseRate, , , , , , , , , , 187.06972182770888016000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(4, Cov A) = 48.88"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(4, Cov A, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Liability, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(4, Dairy, Cov A) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(4, <<998,998>>, Cov A) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(4, 8, Cov A) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Liability, , "(4, Within5miles, Cov A) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Liability, , "(4, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Liability, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Liability, , "(4, false, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Liability, , "(4, false, 1, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Liability, , "(4, Cov A, 1, null, null, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Liability, , "(4, null, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Liability, , "(4, Cov A, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Liability, , "(4, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1.389
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Liability, , "(4, <<0,0>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Liability, , "(4, Cov A, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Liability, , "(4, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Liability, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(4, Cov A, null, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Liability, , "(4, false, Cov A, null, null, 1) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Liability, , (No Dwelling) = 1
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+BaseRate, , , , , , , , , , 187.06970000000, ←, , CostData.BaseRate, , 187.0697
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 187.0697000, ←, , CostData.BaseRate, , 187.0697
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 187.0697, ←, , CostData.BaseRate, , 187.0697
+TermAmount, , , , , , , , , , 187.07, ←, , CostData.BaseRate, , 187.0697
+, CONTINUE, , , , , , , , , , R, , .01, , 187.07
+Farm Personal Liability - Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Water (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Water, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Water, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-294, ←, , table:BaseRate.Water, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Water, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Mitigation.Water, , "(null, null, null, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(4, <<998,998>>, Cov A) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Water, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Water, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Water, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Water, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Water, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Water, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Water, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Water, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Water, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Water, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Water, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Water, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Water, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Water, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Water, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Farm Personal Liability - Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Hurricane (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Hurricane, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Hurricane, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-294, ←, , table:BaseRate.Hurricane, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Hurricane, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(4, <<998,998>>, Cov A) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Hurricane, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Hurricane, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Hurricane, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Hurricane, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Hurricane, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Hurricane, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Hurricane, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Hurricane, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Hurricane, , "(4, null, null, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Hurricane, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Hurricane, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Hurricane, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Hurricane, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Hurricane, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Hurricane, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Hurricane, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9535000000, ←, , table:PolicySizeRelativity.Liability, , "(1, 12500, Cov F) = 0.9535"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 41.6724179724647254460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Cotton Harvesting Equipment) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.9535
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<12500,12500>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 41.67240000000, ←, , CostData.BaseRate, , 41.6724
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 41.6724000, ←, , CostData.BaseRate, , 41.6724
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 41.6724, ←, , CostData.BaseRate, , 41.6724
+TermAmount, , , , , , , , , , 41.67, ←, , CostData.BaseRate, , 41.6724
+, CONTINUE, , , , , , , , , , R, , .01, , 41.67
+Scheduled Farm Personal Property ( Poultry ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0305388889, ←, , table:PolicySizeRelativity.Other, , "(1, 2145, Cov F) = 0.03053889"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 8.1682549221468955500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Poultry) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03053889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<2145,2145>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 8.16830000000, ←, , CostData.BaseRate, , 8.1683
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 8.1683000, ←, , CostData.BaseRate, , 8.1683
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 8.1683, ←, , CostData.BaseRate, , 8.1683
+TermAmount, , , , , , , , , , 8.17, ←, , CostData.BaseRate, , 8.1683
+, CONTINUE, , , , , , , , , , R, , .01, , 8.17
+Scheduled Farm Personal Property ( Machinery ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0564700000, ←, , table:PolicySizeRelativity.Wind, , "(1, 5647, Cov F) = 0.05647"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 6.2584352215038225000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.05647
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<5647,5647>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 6.25840000000, ←, , CostData.BaseRate, , 6.2584
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 6.2584000, ←, , CostData.BaseRate, , 6.2584
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 6.2584, ←, , CostData.BaseRate, , 6.2584
+TermAmount, , , , , , , , , , 6.26, ←, , CostData.BaseRate, , 6.2584
+, CONTINUE, , , , , , , , , , R, , .01, , 6.26
+Scheduled Farm Personal Property ( Grain ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0255200000, ←, , table:PolicySizeRelativity.Hail, , "(1, 2552, Cov F) = 0.02552"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.0093286804913280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Grain) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02552
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<2552,2552>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.00930000000, ←, , CostData.BaseRate, , 0.0093
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0093000, ←, , CostData.BaseRate, , 0.0093
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0093, ←, , CostData.BaseRate, , 0.0093
+TermAmount, , , , , , , , , , 0.01, ←, , CostData.BaseRate, , 0.0093
+, CONTINUE, , , , , , , , , , R, , .01, , 0.01
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Water (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.109500000, ←, , CoverageInfo.CoverageFWaterCost, , 0.73
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Water, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 0.1095, ←, , CostData.BaseRate, , 0.1095
+TermAmount, , , , , , , , , , 0.11, ←, , CostData.BaseRate, , 0.1095
+, CONTINUE, , , , , , , , , , R, , .01, , 0.11
+Scheduled Farm Personal Property ( Combines ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.6352122000, ←, , table:PolicySizeRelativity.Water, , "(1, 52363, Cov F) = 0.6352122"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 2.6010889508007936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.6352122
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<52363,52363>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 2.60110000000, ←, , CostData.BaseRate, , 2.6011
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 2.6011000, ←, , CostData.BaseRate, , 2.6011
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 2.6011, ←, , CostData.BaseRate, , 2.6011
+TermAmount, , , , , , , , , , 2.60, ←, , CostData.BaseRate, , 2.6011
+, CONTINUE, , , , , , , , , , R, , .01, , 2.60
+Scheduled Farm Personal Property ( Grain ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0255200000, ←, , table:PolicySizeRelativity.Wind, , "(1, 2552, Cov F) = 0.02552"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 2.2626565164197280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Grain) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02552
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<2552,2552>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 2.26270000000, ←, , CostData.BaseRate, , 2.2627
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 2.2627000, ←, , CostData.BaseRate, , 2.2627
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 2.2627, ←, , CostData.BaseRate, , 2.2627
+TermAmount, , , , , , , , , , 2.26, ←, , CostData.BaseRate, , 2.2627
+, CONTINUE, , , , , , , , , , R, , .01, , 2.26
+Scheduled Farm Personal Property ( Grain ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0364177778, ←, , table:PolicySizeRelativity.Water, , "(1, 2552, Cov F) = 0.03641778"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.1491247797953163264000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Grain) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03641778
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<2552,2552>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.14910000000, ←, , CostData.BaseRate, , 0.1491
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.1491000, ←, , CostData.BaseRate, , 0.1491
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.1491, ←, , CostData.BaseRate, , 0.1491
+TermAmount, , , , , , , , , , 0.15, ←, , CostData.BaseRate, , 0.1491
+, CONTINUE, , , , , , , , , , R, , .01, , 0.15
+Scheduled Farm Personal Property ( Combines ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Other (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 15.928000000, ←, , CoverageInfo.CoverageFOtherCost, , 318.56
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Other, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 15.9280, ←, , CostData.BaseRate, , 15.928
+TermAmount, , , , , , , , , , 15.93, ←, , CostData.BaseRate, , 15.928
+, CONTINUE, , , , , , , , , , R, , .01, , 15.93
+Scheduled Farm Personal Property ( Grain ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0364177778, ←, , table:PolicySizeRelativity.Theft, , "(1, 2552, Cov F) = 0.03641778"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 1.9133822266422707844000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Grain) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03641778
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<2552,2552>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 1.91340000000, ←, , CostData.BaseRate, , 1.9134
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 1.9134000, ←, , CostData.BaseRate, , 1.9134
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 1.9134, ←, , CostData.BaseRate, , 1.9134
+TermAmount, , , , , , , , , , 1.91, ←, , CostData.BaseRate, , 1.9134
+, CONTINUE, , , , , , , , , , R, , .01, , 1.91
+Farm Personal Liability - Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Wind, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Wind, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-284, ←, , table:BaseRate.Wind, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Wind, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(4, <<998,998>>, Cov A) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Wind, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Wind, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Wind, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Wind, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Wind, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Wind, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Wind, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Wind, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Wind, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Wind, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Wind, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Wind, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Wind, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Wind, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Wind, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Combines ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Theft (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 1.668500000, ←, , CoverageInfo.CoverageFTheftCost, , 33.37
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Theft, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 1.6685, ←, , CostData.BaseRate, , 1.6685
+TermAmount, , , , , , , , , , 1.67, ←, , CostData.BaseRate, , 1.6685
+, CONTINUE, , , , , , , , , , R, , .01, , 1.67
+Scheduled Farm Personal Property ( Combines ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Water (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.130000000, ←, , CoverageInfo.CoverageFWaterCost, , 2.6
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Water, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 0.1300, ←, , CostData.BaseRate, , 0.13
+TermAmount, , , , , , , , , , 0.13, ←, , CostData.BaseRate, , 0.13
+, CONTINUE, , , , , , , , , , R, , .01, , 0.13
+Scheduled Farm Personal Property ( Combines ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.5236300000, ←, , table:PolicySizeRelativity.Wind, , "(1, 52363, Cov F) = 0.52363"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 58.0326622106613525000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.52363
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<52363,52363>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 58.03270000000, ←, , CostData.BaseRate, , 58.0327
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 58.0327000, ←, , CostData.BaseRate, , 58.0327
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 58.0327, ←, , CostData.BaseRate, , 58.0327
+TermAmount, , , , , , , , , , 58.03, ←, , CostData.BaseRate, , 58.0327
+, CONTINUE, , , , , , , , , , R, , .01, , 58.03
+Scheduled Farm Personal Property ( Poultry ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0214500000, ←, , table:PolicySizeRelativity.Hail, , "(1, 2145, Cov F) = 0.02145"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.0078409167922800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Poultry) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02145
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<2145,2145>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.00780000000, ←, , CostData.BaseRate, , 0.0078
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0078000, ←, , CostData.BaseRate, , 0.0078
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0078, ←, , CostData.BaseRate, , 0.0078
+TermAmount, , , , , , , , , , 0.01, ←, , CostData.BaseRate, , 0.0078
+, CONTINUE, , , , , , , , , , R, , .01, , 0.01
+Scheduled Farm Personal Property ( Machinery ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0811233333, ←, , table:PolicySizeRelativity.Theft, , "(1, 5647, Cov F) = 0.08112333"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 4.2622025142400938234000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08112333
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<5647,5647>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 4.26220000000, ←, , CostData.BaseRate, , 4.2622
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 4.2622000, ←, , CostData.BaseRate, , 4.2622
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 4.2622, ←, , CostData.BaseRate, , 4.2622
+TermAmount, , , , , , , , , , 4.26, ←, , CostData.BaseRate, , 4.2622
+, CONTINUE, , , , , , , , , , R, , .01, , 4.26
+Scheduled Farm Personal Property ( Poultry ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0214500000, ←, , table:PolicySizeRelativity.Fire, , "(1, 2145, Cov F) = 0.02145"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 1.4137409458498889062500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Poultry) = 1.25"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02145
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<2145,2145>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 1.41370000000, ←, , CostData.BaseRate, , 1.4137
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 1.4137000, ←, , CostData.BaseRate, , 1.4137
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 1.4137, ←, , CostData.BaseRate, , 1.4137
+TermAmount, , , , , , , , , , 1.41, ←, , CostData.BaseRate, , 1.4137
+, CONTINUE, , , , , , , , , , R, , .01, , 1.41
+Scheduled Farm Personal Property ( Grain ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.0255200000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 2552, Cov F) = 0.02552"
+BaseRate, , , , , , , , , , 0.0507197342080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Grain) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02552
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<2552,2552>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.05070000000, ←, , CostData.BaseRate, , 0.0507
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0507000, ←, , CostData.BaseRate, , 0.0507
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0507, ←, , CostData.BaseRate, , 0.0507
+TermAmount, , , , , , , , , , 0.05, ←, , CostData.BaseRate, , 0.0507
+, CONTINUE, , , , , , , , , , R, , .01, , 0.05
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Fire (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 1.384500000, ←, , CoverageInfo.CoverageFFireCost, , 9.23
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Fire, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 1.3845, ←, , CostData.BaseRate, , 1.3845
+TermAmount, , , , , , , , , , 1.38, ←, , CostData.BaseRate, , 1.3845
+, CONTINUE, , , , , , , , , , R, , .01, , 1.38
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Wind (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 2.077500000, ←, , CoverageInfo.CoverageFWindCost, , 13.85
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Wind, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 2.0775, ←, , CostData.BaseRate, , 2.0775
+TermAmount, , , , , , , , , , 2.08, ←, , CostData.BaseRate, , 2.0775
+, CONTINUE, , , , , , , , , , R, , .01, , 2.08
+Scheduled Farm Personal Property ( Poultry ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.0214500000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 2145, Cov F) = 0.02145"
+BaseRate, , , , , , , , , , 0.0426308110800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Poultry) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02145
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<2145,2145>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.04260000000, ←, , CostData.BaseRate, , 0.0426
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0426000, ←, , CostData.BaseRate, , 0.0426
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0426, ←, , CostData.BaseRate, , 0.0426
+TermAmount, , , , , , , , , , 0.04, ←, , CostData.BaseRate, , 0.0426
+, CONTINUE, , , , , , , , , , R, , .01, , 0.04
+Farm Personal Liability - Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Hail, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Hail, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-294, ←, , table:BaseRate.Hail, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Hail, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(4, <<998,998>>, Cov A) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Hail, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Hail, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Hail, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Hail, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Hail, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Hail, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Hail, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Hail, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Hail, , "(4, null, null, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Hail, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Hail, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Hail, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Hail, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Hail, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Hail, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Hail, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.1772500000, ←, , table:PolicySizeRelativity.Other, , "(1, 12500, Cov F) = 0.17725"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 74.0768183771484375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Cotton Harvesting Equipment) = 1.25"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.17725
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<12500,12500>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 74.07680000000, ←, , CostData.BaseRate, , 74.0768
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 74.0768000, ←, , CostData.BaseRate, , 74.0768
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 74.0768, ←, , CostData.BaseRate, , 74.0768
+TermAmount, , , , , , , , , , 74.08, ←, , CostData.BaseRate, , 74.0768
+, CONTINUE, , , , , , , , , , R, , .01, , 74.08
+Scheduled Farm Personal Property ( Combines ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Wind (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 2.901500000, ←, , CoverageInfo.CoverageFWindCost, , 58.03
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Wind, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 2.9015, ←, , CostData.BaseRate, , 2.9015
+TermAmount, , , , , , , , , , 2.90, ←, , CostData.BaseRate, , 2.9015
+, CONTINUE, , , , , , , , , , R, , .01, , 2.90
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.1250000000, ←, , table:PolicySizeRelativity.Wind, , "(1, 12500, Cov F) = 0.125"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 13.8534514377187500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Cotton Harvesting Equipment) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.125
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<12500,12500>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 13.85350000000, ←, , CostData.BaseRate, , 13.8535
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 13.8535000, ←, , CostData.BaseRate, , 13.8535
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 13.8535, ←, , CostData.BaseRate, , 13.8535
+TermAmount, , , , , , , , , , 13.85, ←, , CostData.BaseRate, , 13.8535
+, CONTINUE, , , , , , , , , , R, , .01, , 13.85
+Scheduled Farm Personal Property ( Poultry ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0305388889, ←, , table:PolicySizeRelativity.Water, , "(1, 2145, Cov F) = 0.03053889"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.1250517016006981632000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Poultry) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03053889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<2145,2145>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.12510000000, ←, , CostData.BaseRate, , 0.1251
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.1251000, ←, , CostData.BaseRate, , 0.1251
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.1251, ←, , CostData.BaseRate, , 0.1251
+TermAmount, , , , , , , , , , 0.13, ←, , CostData.BaseRate, , 0.1251
+, CONTINUE, , , , , , , , , , R, , .01, , 0.13
+Scheduled Farm Personal Property ( Poultry ) -Wind, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Wind (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0214500000, ←, , table:PolicySizeRelativity.Wind, , "(1, 2145, Cov F) = 0.02145"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Wind, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 1.9018018133700300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Wind, , "(1, Cov F) = 110.55"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Wind, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Wind, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Wind, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Wind, , "(1, Poultry) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Wind, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Wind, , "(1, 8, Cov F) = 0.885"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Wind, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Wind, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02145
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Wind, , "(1, Cov F, 1000, <<2145,2145>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 1.90180000000, ←, , CostData.BaseRate, , 1.9018
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 1.9018000, ←, , CostData.BaseRate, , 1.9018
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Wind, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 1.9018, ←, , CostData.BaseRate, , 1.9018
+TermAmount, , , , , , , , , , 1.90, ←, , CostData.BaseRate, , 1.9018
+, CONTINUE, , , , , , , , , , R, , .01, , 1.90
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9520000000, ←, , table:PolicySizeRelativity.Liability, , "(1, 8544, Cov F) = 0.952"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 37.8244190396972099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.952
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<8544,8544>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 37.82440000000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 37.8244000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 37.8244, ←, , CostData.BaseRate, , 37.8244
+TermAmount, , , , , , , , , , 37.82, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , R, , .01, , 37.82
+Scheduled Farm Personal Property ( Combines ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Hail (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.012000000, ←, , CoverageInfo.CoverageFHailCost, , 0.24
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Hail, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 0.0120, ←, , CostData.BaseRate, , 0.012
+TermAmount, , , , , , , , , , 0.01, ←, , CostData.BaseRate, , 0.012
+, CONTINUE, , , , , , , , , , R, , .01, , 0.01
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.1250000000, ←, , table:PolicySizeRelativity.Hail, , "(1, 12500, Cov F) = 0.125"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.0571162353750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Cotton Harvesting Equipment) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.125
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<12500,12500>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.05710000000, ←, , CostData.BaseRate, , 0.0571
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.0571000, ←, , CostData.BaseRate, , 0.0571
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.0571, ←, , CostData.BaseRate, , 0.0571
+TermAmount, , , , , , , , , , 0.06, ←, , CostData.BaseRate, , 0.0571
+, CONTINUE, , , , , , , , , , R, , .01, , 0.06
+Scheduled Farm Personal Property ( Machinery ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9520000000, ←, , table:PolicySizeRelativity.Liability, , "(1, 5647, Cov F) = 0.952"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 37.8244190396972099200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.952
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<5647,5647>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 37.82440000000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 37.8244000, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 37.8244, ←, , CostData.BaseRate, , 37.8244
+TermAmount, , , , , , , , , , 37.82, ←, , CostData.BaseRate, , 37.8244
+, CONTINUE, , , , , , , , , , R, , .01, , 37.82
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.1772500000, ←, , table:PolicySizeRelativity.Water, , "(1, 12500, Cov F) = 0.17725"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.7258094484480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Cotton Harvesting Equipment) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.17725
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<12500,12500>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.72580000000, ←, , CostData.BaseRate, , 0.7258
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.7258000, ←, , CostData.BaseRate, , 0.7258
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.7258, ←, , CostData.BaseRate, , 0.7258
+TermAmount, , , , , , , , , , 0.73, ←, , CostData.BaseRate, , 0.7258
+, CONTINUE, , , , , , , , , , R, , .01, , 0.73
+Scheduled Farm Personal Property ( Combines ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Hurricane (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.065000000, ←, , CoverageInfo.CoverageFHurricaneCost, , 1.3
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Hurricane, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 0.0650, ←, , CostData.BaseRate, , 0.065
+TermAmount, , , , , , , , , , 0.07, ←, , CostData.BaseRate, , 0.065
+, CONTINUE, , , , , , , , , , R, , .01, , 0.07
+Scheduled Farm Personal Property ( Grain ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0255200000, ←, , table:PolicySizeRelativity.Fire, , "(1, 2552, Cov F) = 0.02552"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.8073548293838134800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Grain) = 0.6"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.02552
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<2552,2552>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.80740000000, ←, , CostData.BaseRate, , 0.8074
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.8074000, ←, , CostData.BaseRate, , 0.8074
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.8074, ←, , CostData.BaseRate, , 0.8074
+TermAmount, , , , , , , , , , 0.81, ←, , CostData.BaseRate, , 0.8074
+, CONTINUE, , , , , , , , , , R, , .01, , 0.81
+Scheduled Farm Personal Property ( Poultry ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0305388889, ←, , table:PolicySizeRelativity.Theft, , "(1, 2145, Cov F) = 0.03053889"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 1.6045066660454753922000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Poultry) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03053889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<2145,2145>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 1.60450000000, ←, , CostData.BaseRate, , 1.6045
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 1.6045000, ←, , CostData.BaseRate, , 1.6045
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 1.6045, ←, , CostData.BaseRate, , 1.6045
+TermAmount, , , , , , , , , , 1.60, ←, , CostData.BaseRate, , 1.6045
+, CONTINUE, , , , , , , , , , R, , .01, , 1.60
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.1250000000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 12500, Cov F) = 0.125"
+BaseRate, , , , , , , , , , 0.3105391250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Cotton Harvesting Equipment) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, <<1,1>>, Cotton) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.125
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<12500,12500>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.31050000000, ←, , CostData.BaseRate, , 0.3105
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.3105000, ←, , CostData.BaseRate, , 0.3105
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.3105, ←, , CostData.BaseRate, , 0.3105
+TermAmount, , , , , , , , , , 0.31, ←, , CostData.BaseRate, , 0.3105
+, CONTINUE, , , , , , , , , , R, , .01, , 0.31
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Hail (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.009000000, ←, , CoverageInfo.CoverageFHailCost, , 0.06
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Hail, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 0.0090, ←, , CostData.BaseRate, , 0.009
+TermAmount, , , , , , , , , , 0.01, ←, , CostData.BaseRate, , 0.009
+, CONTINUE, , , , , , , , , , R, , .01, , 0.01
+Scheduled Farm Personal Property ( Combines ) -Hail, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hail (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.5236300000, ←, , table:PolicySizeRelativity.Hail, , "(1, 52363, Cov F) = 0.52363"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hail, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.2392621946352900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hail, , "(1, Cov F) = 0.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hail, , "(1, Cov F, 47527) = 1.103"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hail, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hail, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hail, , "(1, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hail, , "(1, <<998,998>>, Cov F) = 1.005"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hail, , "(1, 8, Cov F) = 1.145"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hail, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hail, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.52363
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hail, , "(1, Cov F, 1000, <<52363,52363>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.23930000000, ←, , CostData.BaseRate, , 0.2393
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.2393000, ←, , CostData.BaseRate, , 0.2393
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hail, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.2393, ←, , CostData.BaseRate, , 0.2393
+TermAmount, , , , , , , , , , 0.24, ←, , CostData.BaseRate, , 0.2393
+, CONTINUE, , , , , , , , , , R, , .01, , 0.24
+Farm Personal Liability - Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Other (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Other, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Other, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-294, ←, , table:BaseRate.Other, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Other, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(4, <<998,998>>, Cov A) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Other, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Other, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Other, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Other, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Other, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Other, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Other, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Other, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Other, , "(4, null, null, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Other, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Other, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Other, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Other, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Other, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Other, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Other, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Combines ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9749452000, ←, , table:PolicySizeRelativity.Liability, , "(1, 52363, Cov F) = 0.9749452"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 42.6096737017810343396912000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Combines) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.9749452
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<52363,52363>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 42.60970000000, ←, , CostData.BaseRate, , 42.6097
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 42.6097000, ←, , CostData.BaseRate, , 42.6097
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 42.6097, ←, , CostData.BaseRate, , 42.6097
+TermAmount, , , , , , , , , , 42.61, ←, , CostData.BaseRate, , 42.6097
+, CONTINUE, , , , , , , , , , R, , .01, , 42.61
+Scheduled Farm Personal Property ( Grain ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0364177778, ←, , table:PolicySizeRelativity.Other, , "(1, 2552, Cov F) = 0.03641778"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 9.7406848606237911000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Grain) = 0.8"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.03641778
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<2552,2552>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 9.74070000000, ←, , CostData.BaseRate, , 9.7407
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 9.7407000, ←, , CostData.BaseRate, , 9.7407
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 9.7407, ←, , CostData.BaseRate, , 9.7407
+TermAmount, , , , , , , , , , 9.74, ←, , CostData.BaseRate, , 9.7407
+, CONTINUE, , , , , , , , , , R, , .01, , 9.74
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.1229688889, ←, , table:PolicySizeRelativity.Water, , "(1, 8544, Cov F) = 0.12296889"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.5035372718125381632000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.12296889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<8544,8544>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.50350000000, ←, , CostData.BaseRate, , 0.5035
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.5035000, ←, , CostData.BaseRate, , 0.5035
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.5035, ←, , CostData.BaseRate, , 0.5035
+TermAmount, , , , , , , , , , 0.50, ←, , CostData.BaseRate, , 0.5035
+, CONTINUE, , , , , , , , , , R, , .01, , 0.50
+Scheduled Farm Personal Property ( Combines ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.6352122000, ←, , table:PolicySizeRelativity.Theft, , "(1, 52363, Cov F) = 0.6352122"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 33.3739126066702356000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.6352122
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<52363,52363>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 33.37390000000, ←, , CostData.BaseRate, , 33.3739
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 33.3739000, ←, , CostData.BaseRate, , 33.3739
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 33.3739, ←, , CostData.BaseRate, , 33.3739
+TermAmount, , , , , , , , , , 33.37, ←, , CostData.BaseRate, , 33.3739
+, CONTINUE, , , , , , , , , , R, , .01, , 33.37
+Scheduled Farm Personal Property ( Machinery ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0564700000, ←, , table:PolicySizeRelativity.Fire, , "(1, 5647, Cov F) = 0.05647"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 2.9774900218981156750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.05647
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<5647,5647>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 2.97750000000, ←, , CostData.BaseRate, , 2.9775
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 2.9775000, ←, , CostData.BaseRate, , 2.9775
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 2.9775, ←, , CostData.BaseRate, , 2.9775
+TermAmount, , , , , , , , , , 2.98, ←, , CostData.BaseRate, , 2.9775
+, CONTINUE, , , , , , , , , , R, , .01, , 2.98
+Farm Personal Liability - Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Theft, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Theft, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-284, ←, , table:BaseRate.Theft, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Theft, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(4, <<998,998>>, Cov A) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Theft, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Theft, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Theft, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Theft, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Theft, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Theft, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Theft, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Theft, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Theft, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Theft, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Theft, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Theft, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Theft, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Theft, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Theft, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Private Power and Light Poles Increased Limits, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+PvtPwrLight (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0E-41, ←, , table:Endorsement Property, , (FRMPrivPowLightPoleIncLimCov) = 36
+, CONTINUE, , , , , , , , , , ×, (, CoverageInfo.PrivatePowerLightPolesCovTermLimit, , 2500
+, CONTINUE, , , , , , , , , , −, , 2500, ), 2500
+, CONTINUE, , , , , , , , , , ÷, , 1000, , 1000
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Optional Coverage, , "(1, <<998,998>>, Optional) = 1.039"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Optional Coverage, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0E-11, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Combines ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Fire (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 1.932500000, ←, , CoverageInfo.CoverageFFireCost, , 38.65
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Fire, , (0) = 0.05
+AdjustedRate, , , , , , , , , , 1.9325, ←, , CostData.BaseRate, , 1.9325
+TermAmount, , , , , , , , , , 1.93, ←, , CostData.BaseRate, , 1.9325
+, CONTINUE, , , , , , , , , , R, , .01, , 1.93
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Theft (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 1.396500000, ←, , CoverageInfo.CoverageFTheftCost, , 9.31
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Theft, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 1.3965, ←, , CostData.BaseRate, , 1.3965
+TermAmount, , , , , , , , , , 1.40, ←, , CostData.BaseRate, , 1.3965
+, CONTINUE, , , , , , , , , , R, , .01, , 1.40
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.1229688889, ←, , table:PolicySizeRelativity.Other, , "(1, 8544, Cov F) = 0.12296889"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 41.1132030424148694375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.12296889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<8544,8544>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 41.11320000000, ←, , CostData.BaseRate, , 41.1132
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 41.1132000, ←, , CostData.BaseRate, , 41.1132
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 41.1132, ←, , CostData.BaseRate, , 41.1132
+TermAmount, , , , , , , , , , 41.11, ←, , CostData.BaseRate, , 41.1132
+, CONTINUE, , , , , , , , , , R, , .01, , 41.11
+Scheduled Farm Personal Property ( Combines ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.6352122000, ←, , table:PolicySizeRelativity.Other, , "(1, 52363, Cov F) = 0.6352122"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 318.5636023944635625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Combines) = 1.5"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.6352122
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<52363,52363>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 318.56360000000, ←, , CostData.BaseRate, , 318.5636
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 318.5636000, ←, , CostData.BaseRate, , 318.5636
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 318.5636, ←, , CostData.BaseRate, , 318.5636
+TermAmount, , , , , , , , , , 318.56, ←, , CostData.BaseRate, , 318.5636
+, CONTINUE, , , , , , , , , , R, , .01, , 318.56
+Scheduled Farm Personal Property ( Combines ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Hurricane (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Hurricane, , "(1, <<1520,1520>>, Cov F) = 1"
+PolicySizeFactor, , , , , , , , , , 0.5236300000, ←, , table:PolicySizeRelativity.Hurricane, , "(1, 52363, Cov F) = 0.52363"
+BaseRate, , , , , , , , , , 1.3008608161900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Hurricane, , "(1, Cov F) = 2.36"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Hurricane, , "(1, Cov F, 47527) = 1.025"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Hurricane, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Hurricane, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Hurricane, , "(1, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Hurricane, , "(1, <<998,998>>, Cov F) = 1.027"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Hurricane, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Hurricane, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Hurricane, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.52363
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Hurricane, , "(1, Cov F, 1000, <<52363,52363>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 1.30090000000, ←, , CostData.BaseRate, , 1.3009
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 1.3009000, ←, , CostData.BaseRate, , 1.3009
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Hurricane, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 1.3009, ←, , CostData.BaseRate, , 1.3009
+TermAmount, , , , , , , , , , 1.30, ←, , CostData.BaseRate, , 1.3009
+, CONTINUE, , , , , , , , , , R, , .01, , 1.30
+Scheduled Farm Personal Property ( Combines ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.5236300000, ←, , table:PolicySizeRelativity.Fire, , "(1, 52363, Cov F) = 0.52363"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 38.6531669954509374050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Combines) = 1.4"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, <<0,0>>, Combines) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.52363
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<52363,52363>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 38.65320000000, ←, , CostData.BaseRate, , 38.6532
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 38.6532000, ←, , CostData.BaseRate, , 38.6532
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 38.6532, ←, , CostData.BaseRate, , 38.6532
+TermAmount, , , , , , , , , , 38.65, ←, , CostData.BaseRate, , 38.6532
+, CONTINUE, , , , , , , , , , R, , .01, , 38.65
+Scheduled Farm Personal Property ( Grain ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Liability (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.9520000000, ←, , table:PolicySizeRelativity.Liability, , "(1, 2552, Cov F) = 0.952"
+AcreageFactor, , , , , , , , , , 2.6270000000, ←, , table:Acreage.Liability, , "(1, <<1520,1520>>, Cov F) = 2.627"
+BaseRate, , , , , , , , , , 18.9122095198486049600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Liability, , "(1, Cov F) = 14.42"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Liability, , "(1, Cov F, 47527) = 0.982"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Liability, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 2.627
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Liability, , "(1, Dairy, Cov F) = 1.1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Liability, , "(1, Grain) = 0.5"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Liability, , "(1, <<998,998>>, Cov F) = 1.067"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Liability, , "(1, 8, Cov F) = 0.91"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Liability, , "(1, null, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Liability, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.952
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Liability, , "(1, Cov F, 1000, <<2552,2552>>) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 18.91220000000, ←, , CostData.BaseRate, , 18.9122
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 18.9122000, ←, , CostData.BaseRate, , 18.9122
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Liability, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 18.9122, ←, , CostData.BaseRate, , 18.9122
+TermAmount, , , , , , , , , , 18.91, ←, , CostData.BaseRate, , 18.9122
+, CONTINUE, , , , , , , , , , R, , .01, , 18.91
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Theft, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Theft (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.1229688889, ←, , table:PolicySizeRelativity.Theft, , "(1, 8544, Cov F) = 0.12296889"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Theft, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 6.4607590211396153922000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Theft, , "(1, Cov F) = 61.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Theft, , "(1, Cov F, 47527) = 0.858"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Theft, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Theft, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Theft, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Theft, , "(1, <<998,998>>, Cov F) = 1.05"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Theft, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Theft, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Theft, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.12296889
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Theft, , "(1, Cov F, 1000, <<8544,8544>>) = 0.942"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 6.46080000000, ←, , CostData.BaseRate, , 6.4608
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 6.4608000, ←, , CostData.BaseRate, , 6.4608
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Theft, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 6.4608, ←, , CostData.BaseRate, , 6.4608
+TermAmount, , , , , , , , , , 6.46, ←, , CostData.BaseRate, , 6.4608
+, CONTINUE, , , , , , , , , , R, , .01, , 6.46
+Scheduled Farm Personal Property ( Machinery ) -Water, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Water (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0811233333, ←, , table:PolicySizeRelativity.Water, , "(1, 5647, Cov F) = 0.08112333"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Water, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 0.3321866392030255104000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Water, , "(1, Cov F) = 4.26"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Water, , "(1, Cov F, 47527) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Water, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Water, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Water, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Water, , "(1, <<998,998>>, Cov F) = 1.043"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Water, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Water, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Water, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08112333
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Water, , "(1, Cov F, 1000, <<5647,5647>>) = 0.96"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 0.33220000000, ←, , CostData.BaseRate, , 0.3322
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 0.3322000, ←, , CostData.BaseRate, , 0.3322
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Water, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 0.3322, ←, , CostData.BaseRate, , 0.3322
+TermAmount, , , , , , , , , , 0.33, ←, , CostData.BaseRate, , 0.3322
+, CONTINUE, , , , , , , , , , R, , .01, , 0.33
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Hurricane, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Hurricane (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 0.046500000, ←, , CoverageInfo.CoverageFHurricaneCost, , 0.31
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Hurricane, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 0.0465, ←, , CostData.BaseRate, , 0.0465
+TermAmount, , , , , , , , , , 0.05, ←, , CostData.BaseRate, , 0.0465
+, CONTINUE, , , , , , , , , , R, , .01, , 0.05
+Farm Personal Liability - Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Coverage_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+ContentOnlyFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+RateFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(4, <<1520,1520>>, Cov A) = 1"
+ContentOnlyFactor, , , , , , , , , , 1.00000000000, ←, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Utility.Fire, , "(4, null, null, null) = 1"
+IFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+JFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+KFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+NFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+OFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+QFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartCameraFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartLightFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+SmartSmokeAlarmFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+WaterLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GasLeakgDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+GeneratorFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+ADFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+AutTempDetFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+CRFactor, , , , , , , , , , 0.0, ←, , 0, , 0
+MaxCreditPerPeril, , , , , , , , , , 0E-10, ←, , table:ProtectiveDevices.Fire, , "(4, Max, Cov A) = 0"
+AllDiscount, , , , , , , , , , 0.0, ←, , IFactor, , 0
+, CONTINUE, , , , , , , , , , +, , JFactor, , 0
+, CONTINUE, , , , , , , , , , +, , KFactor, , 0
+, CONTINUE, , , , , , , , , , +, , MFactor, , 0
+, CONTINUE, , , , , , , , , , +, , NFactor, , 0
+, CONTINUE, , , , , , , , , , +, , OFactor, , 0
+, CONTINUE, , , , , , , , , , +, , QFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartCameraFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartSmokeAlarmFactor, , 0
+, CONTINUE, , , , , , , , , , +, , SmartLightFactor, , 0
+, CONTINUE, , , , , , , , , , +, , AutTempDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GeneratorFactor, , 0
+, CONTINUE, , , , , , , , , , +, , WaterLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , GasLeakgDetFactor, , 0
+, CONTINUE, , , , , , , , , , +, , ADFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CFactor, , 0
+, CONTINUE, , , , , , , , , , +, , CRFactor, , 0
+FinalFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+, CONTINUE, , , , , , , , , , −, , "min(AllDiscount, MaxCreditPerPeril)", , "min(0, 0) = 0"
+BaseRate, , , , , , , , , , 0E-284, ←, , table:BaseRate.Fire, , "(4, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , ContentOnlyFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(4, Cov A, 47527) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , table:RoofShape.Fire, , "(4, null, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Distance To Coast.Fire, , "(47527, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(4, Dairy, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(4, <<998,998>>, Cov A) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(4, 8, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Miles To Fire Department.Fire, , "(4, Within5miles, Cov A) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:RoofExclusion.Fire, , "(4, Cov A, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Farming Claims Factor.Fire, , "(4, <<1000,1000>>, Cov A, 0, 0, 0, 0, 0, 0, 0, 0) = 0"
+, CONTINUE, , , , , , , , , , ×, , RateFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Construction Materials for All.Fire, , "(4, Cov A, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling_Age.Fire, , "(4, false, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Dwelling Year Built Factor.Fire, , "(4, false, 1, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:AoR.Fire, , "(4, Cov A, 1, null, null, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(4, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Fortified.Fire, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , FinalFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , CoverageInfo.CovModLimit, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Brushfire.Fire, , "(4, <<0,0>>) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:SolidFuel.Fire, , "(4, Cov A, false, false, false, false) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:FoundationType.Fire, , "(4, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(4, Cov A, null, null) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:WHDeductible.Fire, , "(4, false, Cov A, null, null, 1) = 0"
+, CONTINUE, , , , , , , , , , ×, , table:Occupancy.Fire, , (No Dwelling) = 0
+, CONTINUE, , , , , , , , , , ×, , table:ACVRoof.Fire, , "(4, false, Cov A, null) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 4) = 1"
+BaseRate, , , , , , , , , , 0E-7, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(4, Cov A) = 0"
+AdjustedRate, , , , , , , , , , 0.0000, ←, , CostData.BaseRate, , 0
+TermAmount, , , , , , , , , , 0.00, ←, , CostData.BaseRate, , 0
+, CONTINUE, , , , , , , , , , R, , .01, , 0.00
+Scheduled Farm Personal Property ( Cotton Harvesting Equipment ) -Liability, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+FarmMachineryUnderScheduledPP_Liability (1), , , , , , , , , , , , , , , 
+BaseRate, , , , , , , , , , 6.250500000, ←, , CoverageInfo.CoverageFLiabilityCost, , 41.67
+, CONTINUE, , , , , , , , , , ×, , table:FPP_RC.Liability, , (1) = 0.15
+AdjustedRate, , , , , , , , , , 6.2505, ←, , CostData.BaseRate, , 6.2505
+TermAmount, , , , , , , , , , 6.25, ←, , CostData.BaseRate, , 6.2505
+, CONTINUE, , , , , , , , , , R, , .01, , 6.25
+Scheduled Farm Personal Property ( Machinery ) -Other, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Other (1), , , , , , , , , , , , , , , 
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+PolicySizeFactor, , , , , , , , , , 0.0811233333, ←, , table:PolicySizeRelativity.Other, , "(1, 5647, Cov F) = 0.08112333"
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Other, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 27.1226332389866416875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Other, , "(1, Cov F) = 335"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Other, , "(1, Cov F, 47527) = 1.075"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Other, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Other, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Other, , "(1, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Other, , "(1, <<998,998>>, Cov F) = 1.035"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Other, , "(1, 8, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Other, , "(1, <<1,1>>, Machinery) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Other, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08112333
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Other, , "(1, Cov F, 1000, <<5647,5647>>) = 0.897"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 27.12260000000, ←, , CostData.BaseRate, , 27.1226
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 27.1226000, ←, , CostData.BaseRate, , 27.1226
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Other, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 27.1226, ←, , CostData.BaseRate, , 27.1226
+TermAmount, , , , , , , , , , 27.12, ←, , CostData.BaseRate, , 27.1226
+, CONTINUE, , , , , , , , , , R, , .01, , 27.12
+Scheduled Farm Personal Property ( Unregistered Farm Motor Vehicle ) -Fire, , , , , , , , , , , , , , , 
+FRM_RB_INDIANA (1), , , , , , , , , , , , , , , 
+Cov_F_Fire (1), , , , , , , , , , , , , , , 
+PolicySizeFactor, , , , , , , , , , 0.0854400000, ←, , table:PolicySizeRelativity.Fire, , "(1, 8544, Cov F) = 0.08544"
+AcreageFactor, , , , , , , , , , 1.0, ←, , 1, , 1
+AcreageFactor, , , , , , , , , , 1.0000000000, ←, , table:Acreage.Fire, , "(1, <<1520,1520>>, Cov F) = 1"
+BaseRate, , , , , , , , , , 4.5049893301040376000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, ←, , table:BaseRate.Fire, , "(1, Cov F) = 97.91"
+, CONTINUE, , , , , , , , , , ×, , table:Territory Relativities.Fire, , "(1, Cov F, 47527) = 0.875"
+, CONTINUE, , , , , , , , , , ×, , table:Wind Hail Exclusion.Fire, , (false) = 1
+, CONTINUE, , , , , , , , , , ×, , AcreageFactor, , 1
+, CONTINUE, , , , , , , , , , ×, , table:Farm_Type.Fire, , "(1, Dairy, Cov F) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Farm Property Class.Fire, , "(1, Unregistered Farm Motor Vehicle) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:Credit.Fire, , "(1, <<998,998>>, Cov F) = 1.058"
+, CONTINUE, , , , , , , , , , ×, , table:Protection Class.Fire, , "(1, 8, Cov F) = 0.587"
+, CONTINUE, , , , , , , , , , ×, , table:Age Of Equipment.Fire, , "(1, <<1,1>>, Other) = 1"
+, CONTINUE, , , , , , , , , , ×, , table:MultipolicyDiscount.Fire, , "(1, false, false, false, false, false, false) = 1"
+, CONTINUE, , , , , , , , , , ×, , PolicySizeFactor, , 0.08544
+, CONTINUE, , , , , , , , , , ×, , table:All Perils Deductible.Fire, , "(1, Cov F, 1000, <<8544,8544>>) = 0.991"
+, CONTINUE, , , , , , , , , , ×, , table:EmployeeDiscount, , "(false, 1) = 1"
+BaseRate, , , , , , , , , , 4.50500000000, ←, , CostData.BaseRate, , 4.505
+, CONTINUE, , , , , , , , , , ×, , RatingInfo.IRPMFactor, , 1
+BaseRate, , , , , , , , , , 4.5050000, ←, , CostData.BaseRate, , 4.505
+, CONTINUE, , , , , , , , , , +, , table:Fixed Expense.Fire, , "(1, Cov F) = 0"
+AdjustedRate, , , , , , , , , , 4.5050, ←, , CostData.BaseRate, , 4.505
+TermAmount, , , , , , , , , , 4.51, ←, , CostData.BaseRate, , 4.505
+, CONTINUE, , , , , , , , , , R, , .01, , 4.51
